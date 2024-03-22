@@ -280,7 +280,7 @@ body {
   align-items: center;
   margin-bottom: 8px;
   margin-top: 8px;
-
+  
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid #4d3800; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
@@ -381,6 +381,23 @@ body {
     width: 75%;
     margin-bottom: 10px;
   }
+  #banner .cover p {
+    font-size: 16px;
+  }
+  #banner .cover .desg{
+    font-size: 15px;
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 18.5em;}
+  }
+}
+@media (max-width: 290px) {
+  #banner .cover .desg i{
+    font-size: 20px;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
   .cover p {
     font-size: 15px;
   }
@@ -389,7 +406,7 @@ body {
   }
   @keyframes typewriter{
     from{width: 0;}
-    to{width: 18.5em;}
+    to{width: 17.5em;}
   }
 }
 
@@ -805,9 +822,24 @@ body {
     max-width: 50%;
   }
   .img-bckg_2{
-    transform: translate(-20%, -230px) !important;
+    transform: translate(-11%, -163px) !important;
     max-width: 50%;
   }
+}
+@media (max-width:600px) {
+  .img-bckg_1{
+    transform: translate(100%, 300px) !important;
+    max-width: 63%;
+  }
+  .img-bckg_2{
+    display: none;
+  }
+}
+@media (max-width:426px) {
+  .img-bckg_1{
+    transform: translate(100%, 350px) !important;
+  }
+  
 }
 @media (max-width: 320px){
   #skills .section-title h1 {
@@ -998,12 +1030,7 @@ body {
   }
 }
 @media (max-width:426px) {
-  .img-bckg_1{
-    max-width: 58%;
-  }
-  .img-bckg_2{
-    display: none;
-  }
+
   .contact-dtls{
     padding: 2rem 0.5rem;
   }
