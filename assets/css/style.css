@@ -19,6 +19,7 @@ body {
     text-decoration: none;
   }
 
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -42,7 +43,7 @@ body {
     padding: 0;
 }
 #header.header-scrolled, #header.header-inner-pages {
-  background: rgba(250, 237, 205, 0.5);
+  background: rgba(250, 237, 205, 0.8);
 }
   
 .navbar ul {
@@ -325,11 +326,12 @@ body {
   transition: all .5s ease-in-out;
   
 }
-#banner .designation a svg {
+#banner .designation a i {
   color: #4d3800;
-  font-weight: bolder;
+  -webkit-text-stroke: 0.5px;
   margin-left: 0.5rem;
 }
+
 @media (max-width: 991.99px) {
   #banner .cover {
     background: none;
@@ -610,8 +612,8 @@ body {
   z-index: 3;
   right: -1.5px;
   border-radius: 0 0 15px 15px;
-  border: 2px solid #a27e57;
-  background-color: #a27e57;
+  border: 2px solid #4d3800;
+  background-color: #4d3800;
   transition: all .5s ease-in-out;
   padding: 10px 15px;
 }
@@ -625,7 +627,7 @@ body {
 }
 .projects .projects-item .projects-info h4 {
   font-size: 18px;
-  color: #faedcd;
+  color: #fff;
   font-weight: 600;
   margin-bottom: 0px;
   text-transform: uppercase;
@@ -646,6 +648,12 @@ body {
   border: 2px solid #fff;
 }
 
+.projects-info-links a i.bi-code-slash::before{
+  -webkit-text-stroke: 0.5px;
+}
+.projects-info-links a .bi::before, [class^="bi-"]::before, [class*=" bi-"]::before{
+  vertical-align: -0.15em;
+}
 .projects-info-links a:hover {
   background-position: 100% 0;
   transition: all .5s ease-in-out;
@@ -655,7 +663,7 @@ body {
   opacity: 1;
 }
 .projects .projects-item .projects-info p {
-  color: #fff;
+  color: #faedcd;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -914,7 +922,7 @@ body {
   font-style: normal;
   font-size: 80px;
   line-height: 80px;
-  -webkit-text-stroke: 0.2px #7e6d40e8;
+  -webkit-text-stroke: 0.3px #7e6d40;
   color: #fff;
   /* margin-top: 12px; */
   margin-bottom: 0;
@@ -941,10 +949,10 @@ body {
   transition: all .5s ease-in-out;
   
 }
-.contact .cv_dwnld svg {
+.contact .cv_dwnld i.bi {
   color: #4d3800;
-  font-weight: bolder;
   margin-left: 0.5rem;
+  -webkit-text-stroke: 0.5px;
 }
 @media (max-width:1199.99px) {
   .contact .section-title {
