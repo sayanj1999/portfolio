@@ -277,24 +277,35 @@ body {
 }
 .cover .desg {
   font-weight: 600;
+
   display: flex;
+  justify-content: left;
   align-items: center;
   margin-bottom: 8px;
   margin-top: 8px;
-  
+  font-size: 18px;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid #4d3800; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   letter-spacing: 0px;
 }
-
+.cover .desg span{
+  font-weight: 400;
+}
 .anim-typewriter{
-  animation: typewriter 3s steps(54) 1s 1 normal both,
-             blinkTextCursor 500ms steps(54) infinite normal;
+  animation: typewriter 7s steps(46)  forwards,
+             blinkTextCursor 400ms step-end infinite;
+
+             /* typewriter 7s steps(46) 1.5s 1 normal both,
+             blinkTextCursor 400ms steps(46) infinite normal; */
+             /* typing 5s steps(23) forwards,
+    blink 1s step-end infinite; */
 }
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 30em;}
+  to{width: 25.5em;}
+
+  /* to{width: 25.5em;} */
 }
 @keyframes blinkTextCursor{
   from{border-right-color: #4d3800}
@@ -367,11 +378,24 @@ body {
     width: 100%;
   }
 }
+@media (min-width: 551px) {
+  #banner .cover .designation .desg-mobile{
+    display: none;
+  }
+}
 @media (max-width: 550.99px) {
   #banner h1 {
     font-size: 68px;
     line-height: 59px;
   }
+  #banner .cover .desg{
+    display: none;
+  }
+  #banner .cover .designation .desg-mobile .desg{
+    display: block !important;
+    border-right: none;
+  }
+  
 }
 
 @media (max-width: 344.99px) {
@@ -543,7 +567,91 @@ body {
     margin-top: 0;
   }
 }
+/*--------------------------------------------------------------
+# Experience
+--------------------------------------------------------------*/
+#experience{
+  padding: 5rem 0 2rem;
+}
+#experience .section-title h1{
+  font-family: "Ultra", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 65px;
+  line-height: 56px;
+  color: #4d3800;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 5rem;
+}
 
+#experience .experience-dtls{
+  border-radius: 15px;
+  border: 3px solid #8c62393f;
+  padding: 30px 25px;
+  box-shadow: 0 4px 75px 8px rgba(0, 0, 0, 0.17);
+  min-height: 455px;
+}
+#experience .experience-dtls.exp-1{
+  background-image: linear-gradient(to right, #F1E6C7,#FCF6E6, #FCF6E6);
+}
+#experience .experience-dtls.exp-2{
+  margin-top: 55px;
+}
+#experience .experience-dtls .exp-desg{
+  color: #4D3800;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+}
+#experience .experience-dtls .exp-comp{
+  font-weight: 500;
+  text-align: center;
+}
+#experience .experience-dtls .exp-date{
+  font-weight: 500;
+  color: #000;
+  text-align: center;
+}
+#experience .experience-dtls .exp-details{
+  color: #000;
+}
+#experience .experience-dtls .exp-skills{
+  flex-wrap: wrap;
+}
+#experience .experience-dtls .exp-skills span{
+  background-color: #4D3800;
+  color: #fef1d0;
+  font-weight: 600;
+  padding: 5px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  min-width: 75px;
+  text-align: center;
+}
+
+@media(max-width:991.99px){
+  #experience .experience-dtls{
+    min-height: unset;
+  }
+}
+@media(max-width:767.99px){
+  #experience{
+    padding: 2rem 0;
+  }
+  #experience .section-title h1{
+    font-size: 50px;
+  }
+}
+@media (max-width: 320px){
+  #experience{
+    padding: 0;
+  }
+  #experience .section-title h1{
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
 /*--------------------------------------------------------------
 # My Projects
 --------------------------------------------------------------*/
@@ -720,6 +828,7 @@ body {
   overflow-x: clip;
   position: relative;
   margin-bottom: 3rem;
+
 }
 .img-bckg_1{
   position: absolute;
