@@ -595,9 +595,6 @@ body {
 #experience .experience-dtls.exp-1{
   background-image: linear-gradient(to right, #F1E6C7,#FCF6E6, #FCF6E6);
 }
-#experience .experience-dtls.exp-2{
-  margin-top: 55px;
-}
 #experience .experience-dtls .exp-desg{
   color: #4D3800;
   font-weight: 700;
@@ -633,6 +630,9 @@ body {
 @media(max-width:991.99px){
   #experience .experience-dtls{
     min-height: unset;
+  }
+  #experience .experience-dtls.exp-2{
+    margin-top: 55px;
   }
 }
 @media(max-width:767.99px){
