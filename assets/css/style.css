@@ -294,7 +294,7 @@ body {
 }
 .anim-typewriter{
   animation: typewriter 6s steps(44)  forwards,
-             blinkTextCursor step-end infinite;
+             blinkTextCursor 400s step-end infinite;
 
              /* typewriter 7s steps(46) 1.5s 1 normal both,
              blinkTextCursor 400ms steps(46) infinite normal; */
@@ -304,8 +304,6 @@ body {
 @keyframes typewriter{
   from{width: 0;}
   to{width: 16.5em;}
-
-  /* to{width: 25.5em;} */
 }
 @keyframes blinkTextCursor{
   from{border-right-color: #4d3800}
