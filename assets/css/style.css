@@ -293,7 +293,7 @@ body {
   font-weight: 400;
 }
 .anim-typewriter{
-  animation: typewriter 7s steps(46)  forwards,
+  animation: typewriter 7s steps(42)  forwards,
              blinkTextCursor 400ms step-end infinite;
 
              /* typewriter 7s steps(46) 1.5s 1 normal both,
@@ -303,7 +303,7 @@ body {
 }
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 25.5em;}
+  to{width: 22.5em;}
 
   /* to{width: 25.5em;} */
 }
