@@ -616,7 +616,7 @@ body {
 }
 #experience .experience-dtls .exp-skills span{
   background-color: #4D3800;
-  color: #fef1d0;
+  color: #fef1d0;   
   font-weight: 600;
   padding: 5px 20px;
   margin: 5px;
@@ -882,28 +882,40 @@ body {
   font-weight: 600;
   color: #4d3800;
   font-size: 1rem;
+  text-shadow: 0px 2px 5px #c7b299;
 }
 
 .skills .progress .skill .val {
-  margin-left: 10px;
+  margin-left: 5%;
   font-style: normal;
+  color: #c7b299;
+  border-radius: 3px;
 }
 
 .skills .progress-bar-wrap {
-  background: #c7b299;
+  background: #fcf6e6;
   height: 11px;
+  border-radius: 3px;
 }
 
 .skills .progress-bar {
   height: 11px;
   transition: 0.9s;
-  background-color: #8c6239;
+  background: linear-gradient(to right, #8c6239, #c7b299) ;
+  box-shadow: 0 0 5px #8c6239;
+  border-radius: 2px;
+
 }
 .progress-bar {
   text-align: left;
   transition-duration: 3s;
 }
 
+@media (min-width:992px){
+  .skills .colm-lt .progress-bar{
+    background: linear-gradient(to left, #8c6239, #c7b299) ;
+  }
+}
 @media (max-width:991.99px){
   .colm-lt{
     text-align: left;
@@ -976,7 +988,8 @@ body {
 }
 .contact-dtls{
   background-color: #fff;
-  box-shadow: 2px 2px 10px #c2c2c2;
+  box-shadow: 0px 2px 50px #c7b299;
+  border-radius: 20px;
   padding: 3rem;
   transform: translateY(-60px);
   height: 520px;
@@ -1025,15 +1038,16 @@ body {
 }
 .contact .section-title h1{
   font-family: "Ultra", serif;
-  font-weight: 800;
+  font-weight: 400;
   font-style: normal;
   font-size: 80px;
   line-height: 80px;
-  -webkit-text-stroke: 0.3px #7e6d40;
-  color: #fff;
+  /* -webkit-text-stroke: 0.3px #7e6d40;
+  color: #fff; */
   /* margin-top: 12px; */
+  color: #8c6239;
   margin-bottom: 0;
-  letter-spacing: -1px;
+  /* letter-spacing: -1px; */
 }
 .contact .cv_dwnld {
   box-shadow: 0px 5px 13px #4d380029;
@@ -1048,8 +1062,9 @@ body {
   background-size: 300% 100%;
   transition: all .5s ease-in-out;
   border: 2px solid #fff;
-  width: 190px;
+  width: 250px;
   margin-bottom: 0.5rem;
+  text-align: center;
 }
 .contact .cv_dwnld:hover {
   background-position: 100% 0;
