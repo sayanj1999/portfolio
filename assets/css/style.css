@@ -441,7 +441,7 @@ body {
 --------------------------------------------------------------*/
 #abt_me{
   margin: 5rem 0;
-  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(../img/about_bckg.png);
+  background-image: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.7)), url(../img/about_bckg.png);
   background-repeat: no-repeat;
   background-position: right;
   background-size: 17%;
@@ -589,6 +589,15 @@ body {
   padding: 30px 25px;
   box-shadow: 0 4px 75px 8px rgba(0, 0, 0, 0.17);
   min-height: 455px;
+  width: 90%;
+  margin: 0 auto;
+  transition: transform 0.6s ease-out;
+
+}
+#experience .experience-dtls:hover{
+    transform: scale(1.10);
+    transition: all 0.6s;
+    /* transition-timing-function: ; */
 }
 #experience .experience-dtls.exp-1{
   background-image: linear-gradient(to right, #F1E6C7,#FCF6E6, #FCF6E6);
