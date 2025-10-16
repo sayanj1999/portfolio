@@ -221,35 +221,55 @@
 })()
 
 // Owlcarousel
-$(document).ready(function(){
-  $(".owl-carousel").owlCarousel({
-  	loop:true,
+// $(document).ready(function(){
+//   $(".owl-carousel").owlCarousel({
+//   	loop:true,
+//     margin:10,
+//     nav:true,
+// 	  autoplay:false,
+//     autoplayTimeout:3000,
+//     autoplayHoverPause:true,
+//     center: true,
+//     navText: [
+// 	    "<i class='bi bi-caret-left-fill'></i>",
+// 	    "<i class='bi bi-caret-right-fill'></i>"
+// 	],
+//     responsive:{
+//         0:{
+//             items:1
+//         },
+//         100:{
+//           items:1
+//         },
+//         576:{
+//           items:1
+//         },
+//         600:{
+//             items:2
+//         },
+//         768:{
+//             items:3
+//         }
+//     }
+//   });
+// });
+$('.owl-carousel').owlCarousel({
+    loop:false,
     margin:10,
-    nav:true,
-	  autoplay:false,
-    autoplayTimeout:3000,
-    autoplayHoverPause:true,
-    center: true,
-    navText: [
-	    "<i class='bi bi-caret-left-fill'></i>",
-	    "<i class='bi bi-caret-right-fill'></i>"
-	],
+    // nav:true,
+    dots:true,
     responsive:{
         0:{
             items:1
-        },
-        100:{
-          items:1
-        },
-        576:{
-          items:1
         },
         600:{
             items:2
         },
         768:{
-            items:3
+            items:2
+        },
+        769:{
+          items:3
         }
     }
-  });
-});
+})
