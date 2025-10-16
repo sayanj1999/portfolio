@@ -251,8 +251,8 @@ body {
   font-style: normal;
   font-size: 80px;
   line-height: 66px;
-  -webkit-text-stroke: 1.5px #4d3800;
-  color: #fcf6e6;
+  -webkit-text-stroke: 2.0px #fcf6e6;
+  color: #4d3800;
   text-shadow: 2px 2px 6px #4d3800e1;
   margin-top: 8px;
   margin-bottom: 8px;
@@ -471,6 +471,12 @@ body {
 .abt_me_dtls{
   font-weight: 500;
   font-size: 18px;
+  color: #8c6239;
+
+}
+.abt_me_dtls span{
+  font-weight: 700;
+  color: #4d3800;
 }
 
 @media (max-width:1399.99px) {
@@ -599,7 +605,7 @@ body {
     transition: all 0.6s;
     /* transition-timing-function: ; */
 }
-#experience .experience-dtls.exp-1{
+#experience .experience-dtls{
   background-image: linear-gradient(to right, #F1E6C7,#FCF6E6, #FCF6E6);
 }
 #experience .experience-dtls .exp-desg{
@@ -659,6 +665,106 @@ body {
     line-height: 50px;
   }
 }
+/*--------------------------------------------------------------
+# Certificate
+--------------------------------------------------------------*/
+#certificate{
+  margin-top: 5rem;
+  padding: 5rem 0 ;
+  background-color: #333;
+  color: #FCF6E6;
+}
+#certificate .certificate-title p.title_head{
+  font-family: "Sacramento", cursive;
+  font-size: 30px;
+  text-align: center;
+}
+#certificate .certificate-title h1{
+  font-family: "Ultra", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 65px;
+  text-align: center;
+  background: -webkit-linear-gradient(left, #fcf6e6, #a27e57);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+#certificate .certificate-title p.cert_info{
+  font-weight: 200;
+  font-size: 12px;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+#certificate .slider .item .company{
+  font-weight: 600;
+}
+#certificate .owl-carousel .owl-dots{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.owl-carousel .owl-dots .owl-dot.active span {
+  background: #a27e57;
+}
+.owl-carousel .owl-dots .owl-dot span {
+  background: #c7b299;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  border-radius: 50%;
+  display: block;
+}
+
+@media(min-width:992px){
+  #certificate .certificate-title{
+    padding-top: 1.2rem;
+  }
+  #certificate .certificate-title p.title_head,
+  #certificate .certificate-title p.cert_info{
+    text-align: left;
+  }
+  #certificate .certificate-title h1{
+    font-size: 45px;
+    text-align: left;
+  }
+  
+}
+@media(min-width: 992.01px) and (max-width:1199.99px){
+  #certificate .certificate-title h1{
+    font-size: 35px;
+  }
+  #certificate .certificate-title p.title_head{
+    font-size: 25px;
+  }
+}
+@media(max-width:767.99px){
+  #certificate{
+    padding: 2rem 0;
+  }
+  #certificate .certificate-title h1{
+    font-size: 50px;
+  }
+}
+@media (max-width: 320px){
+  #certificate{
+    padding: 0;
+  }
+  #certificate .certificate-title h1{
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+
+
+
+
+
+
+
+
 /*--------------------------------------------------------------
 # My Projects
 --------------------------------------------------------------*/
@@ -728,7 +834,7 @@ body {
   right: -1.5px;
   border-radius: 0 0 15px 15px;
   border: 2px solid #4d3800;
-  background-color: #4d3800;
+  background-color: #faedcd;
   transition: all .5s ease-in-out;
   padding: 10px 15px;
 }
@@ -742,7 +848,7 @@ body {
 }
 .projects .projects-item .projects-info h4 {
   font-size: 18px;
-  color: #fff;
+  color: #4d3800;
   font-weight: 600;
   margin-bottom: 0px;
   text-transform: uppercase;
@@ -780,12 +886,24 @@ body {
   opacity: 1;
 }
 .projects .projects-item .projects-info p {
-  color: #faedcd;
+  color: #4d3800;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   margin-bottom: 0;
   width: 90%;
+}
+.projects .projects-item .projects-info .prj_skill{
+  display: flex;
+  flex-wrap: wrap;
+}
+.projects .projects-item .projects-info span{
+  border: 2px solid #4D3800;
+  background-color: #c7b299;
+  border-radius: 5px;
+  font-weight: 500;
+  padding: 3px 5px;
+  margin: 3px 8px 3px;
 }
 .projects .projects-item:hover .projects-img img {
   transform: scale(1.15);
