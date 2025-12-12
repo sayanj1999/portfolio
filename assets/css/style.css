@@ -608,6 +608,9 @@ body {
 #experience .experience-dtls{
   background-image: linear-gradient(to right, #F1E6C7,#FCF6E6, #FCF6E6);
 }
+#experience .experience-dtls.exp-3{
+    margin-top: 55px;
+  }
 #experience .experience-dtls .exp-desg{
   color: #4D3800;
   font-weight: 700;
