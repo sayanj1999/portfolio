@@ -1,71 +1,44 @@
-# Medibuddy Insight Analysis 🏥📊
+# Portfolio Website — Sayan Jana
 
-## 📌 Project Overview
-This project focuses on performing exploratory data analysis (EDA) on healthcare service usage data to uncover meaningful insights related to user behavior, service demand, and engagement patterns. The analysis aims to transform raw healthcare data into clear, actionable insights that support data-driven decision-making.
+Welcome to my **personal portfolio website** repository!  
+This repo contains the source code and assets for my portfolio site showcasing my skills, projects, and professional background.
 
-The project demonstrates strong analytical thinking, data cleaning, visualization, and insight communication skills using Python and related data analysis tools.
-
----
-
-## 🎯 Objectives
-- Understand healthcare service utilization trends  
-- Analyze user behavior and service distribution  
-- Identify key metrics and patterns impacting engagement  
-- Present insights in a clear, interpretable format  
+🌐 Live Site: [https://sayanj-portfolio.netlify.app/](https://sayanj-portfolio.netlify.app/)
 
 ---
 
-## 🧰 Tools & Technologies
-- **Python** (Pandas, NumPy)  
-- **Data Visualization** (Matplotlib, Seaborn)  
-- **Jupyter Notebook**  
-- **HTML (Notebook Export)**  
-- **Excel / SQL (supporting analysis)**  
+## 👨‍💻 About
+
+This portfolio website highlights:
+- **About Me** — Who I am and what I do  
+- **Skills & Technologies** — Tools and languages I work with  
+- **Projects** — Examples of my work with live links and descriptions  
+- **Contact Information & Social Links**
+
+The site is designed to give employers, collaborators, and visitors a concise view of my professional profile and technical experience.
 
 ---
 
-## 📂 Project Files
-- `Datasets`
-  - `raw_data` – Original / unprocessed datasets
-  - `cleaned_data` – Cleaned and transformed datasets  
-- `Medibuddy_Insight_Analysis.ipynb` – Jupyter Notebook containing the complete analysis  
-- `Medibuddy_Insight_Analysis.html` – Rendered HTML version for easy viewing  
+## 🛠️ Built With
 
-👉 **View the project here:**  
-[Click to View Analysis (HTML)](https://sayanj1999.github.io/medibuddy-insight-analysis/Medibuddy%20Insight%20Analysis.html)
+This website is built using:
+- **HTML5**
+- **CSS3**
+- **JavaScript**
+- **GitHub Pages** for hosting
 
----
-
-## 📁 Dataset Description
-- **raw_data/**  
-  Contains the original datasets as received, without any modifications.  
-  These files are preserved for reference and reproducibility.
-
-- **cleaned_data/**  
-  Contains datasets after data cleaning, preprocessing, and transformation  
-  (handling missing values, formatting, filtering, and feature preparation).
-  
----
-
-## 🔍 Key Analysis Performed
-- Data cleaning and preprocessing to ensure accuracy and consistency  
-- Exploratory Data Analysis (EDA) to identify trends and patterns  
-- Analysis of service usage, appointment volume, and user engagement  
-- Visualization of key metrics for better interpretability  
-- Insight generation with a focus on clarity and real-world relevance  
+Responsive design ensures it works well on both desktop and mobile.
 
 ---
 
-## 📈 Key Insights
-- Identified patterns in healthcare service demand across categories  
-- Highlighted user engagement trends and usage concentration  
-- Revealed areas of high and low utilization that can inform decision-making  
+## 🚀 Features
 
-*(Detailed insights are available in the HTML report.)*
+✔️ Clean, modern layout  
+✔️ Project showcase sections  
+✔️ Interactive navigation  
+✔️ Mobile-friendly design  
+✔️ Easy to update and expand  
 
 ---
 
-## 📊 Output & Deliverables
-- Cleaned and processed dataset  
-- Visualizations highlighting major trends and metrics  
-- Structured analytical narrative explaining findings  
+
