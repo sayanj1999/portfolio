@@ -176,7 +176,6 @@ body {
   left: 0;
   bottom: 0;
   background: #d7a32958;
-  transition: 0.3s;
   z-index: 999;
 }
 .navbar-mobile .mobile-nav-toggle {
@@ -186,7 +185,7 @@ body {
 }
 .navbar-mobile ul {
   display: block;
-  position: absolute;
+  position: absolute; /* Changed back to absolute, but ensure the parent is fixed properly */
   top: 55px;
   right: 15px;
   bottom: 15px;
@@ -195,7 +194,6 @@ body {
   border-radius: 10px;
   background-color: #fff;
   overflow-y: auto;
-  transition: 0.3s;
 }
 .navbar-mobile a,
 .navbar-mobile a:focus {
@@ -363,7 +361,7 @@ body {
   }
   #banner .cover .sm_screen_img {
     display: block;
-    width: 65%;
+    width: 50%;
     margin: 0 auto 30px;
   }
   #banner h1 {
@@ -441,14 +439,9 @@ body {
 --------------------------------------------------------------*/
 #abt_me{
   margin: 5rem 0;
-  background-image: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.7)), url(../img/about_bckg.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 17%;
+  overflow-x: hidden;
 }
 .abt_me_hd{
-  display: flex;
-  align-items: center;
   font-size: 15px;
 }
 .abt_me_bckg{
@@ -460,13 +453,14 @@ body {
   font-family: "Ultra", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 65px;
-  line-height: 56px;
+  font-size: 85px;
+  line-height: 70px;
   color: #4d3800;
   letter-spacing: 1px;
+  
 }
 #abt_me h1 i{
-  font-size: 45px;
+  font-size: 70px;
 }
 .abt_me_dtls{
   font-weight: 500;
@@ -479,115 +473,14 @@ body {
   color: #4d3800;
 }
 
-@media (max-width:1399.99px) {
-  .abt_me_bckg{
-    transform: translate(-85%, 10px) scale(1.2);
-  }
-  
-}
-@media (max-width:1199.99px) {
-  .abt_me_bckg{
-    transform: translate(-95%, 10px) scale(1.2);
-  }
-  
-}
-@media (max-width:991.99px) {
-  #abt_me{
-    background-size: 30%;
-  }
-  .abt_me_bckg{
-    transform: translate(-110%, 25px) scale(1.5);
-  }
-  #abt_me h1{
-    margin-top: 50px;
-    font-size: 55px;
-    line-height: 48px;
-  }
-  .abt_me_dtls{
-    margin-bottom: 0;
-  }
-}
-@media (max-width:767.99px) {
-  #abt_me{
-    background-size: 50%;
-    margin: 3rem 0;
-  }
 
-  .abt_me_bckg{
-    transform: none;
-    display: none;
-  }
-  .abt_me_hd{
-    background: url(../img/laptop.jpg) no-repeat;
-    background-size: 70%;
-    height: auto;
-    background-position: center;
-    height: 210px;
-    justify-content: center;
-  }
-  #abt_me h1{
-    margin-top: -10px;
-    width: 40%;
-  }
-  #abt_me h1 i{
-    transform: rotate(90deg);
-    position: absolute;
-    margin-left: 15px;
-  }
-  .abt_me_dtls{
-    text-align: center;
-    margin-top: 30px;
-  }
-}
-@media (max-width:450px) {
-  #abt_me h1{
-    font-size: 47px;
-    line-height: 40px;
-  }
-  #abt_me h1 i{
-    font-size: 38px;
-  }
-}
-@media (max-width:426px) {
-  .abt_me_hd{
-    background-size: 95%;
-  }
-  #abt_me h1{
-    margin-left: -30px;
-  }
-}
-@media (max-width: 320px){
-  #abt_me h1{
-    font-size: 34px;
-    line-height: 33px;
-    margin-left: -10px;
-  }
-  #abt_me h1 i {
-    font-size: 32px;
-    margin-left: 8px;
-  }
-  .abt_me_dtls{
-    font-size: 16px;
-    margin-top: 0;
-  }
-}
 /*--------------------------------------------------------------
 # Experience
 --------------------------------------------------------------*/
 #experience{
-  padding: 5rem 0 2rem;
+  overflow-x: hidden;
 }
-#experience .section-title h1{
-  font-family: "Ultra", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 65px;
-  line-height: 56px;
-  color: #4d3800;
-  letter-spacing: 1px;
-  text-align: center;
-  margin-bottom: 5rem;
-}
+
 
 #experience .experience-dtls{
   border-radius: 15px;
@@ -644,37 +537,23 @@ body {
 }
 
 @media(max-width:991.99px){
-  #experience .experience-dtls{
-    min-height: unset;
-  }
+  
   #experience .experience-dtls.exp-2{
     margin-top: 55px;
   }
 }
-@media(max-width:767.99px){
-  #experience{
-    padding: 2rem 0;
-  }
-  #experience .section-title h1{
-    font-size: 50px;
-  }
-}
+
 @media (max-width: 320px){
   #experience{
     padding: 0;
   }
-  #experience .section-title h1{
-    font-size: 40px;
-    line-height: 50px;
-  }
+  
 }
 /*--------------------------------------------------------------
 # Certificate
 --------------------------------------------------------------*/
 #certificate{
-  margin-top: 5rem;
   padding: 5rem 0 ;
-  background-color: #333;
   color: #FCF6E6;
 }
 #certificate .certificate-title p.title_head{
@@ -775,21 +654,7 @@ body {
 #projects{
   padding: 5rem 0 2rem;
 }
-#projects .section-title h1{
-  font-family: "Ultra", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 65px;
-  line-height: 56px;
-  color: #4d3800;
-  letter-spacing: 1px;
-  text-align: center;
-  margin-bottom: 3rem;
-}
-#projects-flters{
-  padding: 0;
-  margin-bottom: 3rem;
-}
+
 #projects-flters li{
   list-style: none;
   color: #8c6239;
@@ -803,13 +668,9 @@ body {
   padding: 8px 20px;
   border-radius: 50px;
 }
-#projects-flters li.filter-active{
-  background-color: #8c6239;
-  color: #faedcd;
-}
 #projects-flters li:hover{
   border: 2px solid #8c6239;
-  background-color: #faedcd;
+  background-color: #fff;
   color: #8c6239;
 }
 .projects .projects-item {
@@ -857,6 +718,18 @@ body {
   text-transform: uppercase;
 }
 .projects-info-links a {
+  
+  color: #4d3800;
+  font-weight: 500;
+  padding: 1rem 1.5rem;
+  font-size: 16px;
+  border-radius: 7px;
+  display: inline-block;
+  margin: 10px 10px;
+  text-align: center;
+  border: 2px solid #fcf6e6;
+}
+/* .projects-info-links a {
   box-shadow: 0px 5px 13px #4d380029;
   color: #4d3800;
   font-weight: 500;
@@ -870,7 +743,7 @@ body {
   margin: 10px 10px;
   text-align: center;
   border: 2px solid #fff;
-}
+} */
 
 .projects-info-links a i.bi-code-slash::before{
   -webkit-text-stroke: 0.5px;
@@ -924,9 +797,7 @@ body {
   #projects{
     padding: 2rem 0;
   }
-  #projects .section-title h1{
-    font-size: 50px;
-  }
+  
   .projects-info-links a{
     padding: 1rem 2.5rem;
   }
@@ -944,11 +815,8 @@ body {
   #projects{
     padding: 0;
   }
-  #projects .section-title h1{
-    font-size: 40px;
-    line-height: 50px;
-  }
-  #projects .section-title h1, #projects-flters{
+  
+  #projects-flters{
     margin-bottom: 1.8rem;
   }
 }
@@ -976,17 +844,7 @@ body {
   z-index: -999;
   max-width: 30%;
 }
-#skills .section-title h1{
-  font-family: "Ultra", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 65px;
-  line-height: 56px;
-  color: #4d3800;
-  letter-spacing: 1px;
-  text-align: center;
-  margin-bottom: 3rem;
-}
+
 .content-hd{
   font-weight: bold;
   text-transform: uppercase;
@@ -1077,9 +935,7 @@ body {
 }
 
 @media (max-width:767.99px) {
-  #skills .section-title h1{
-    font-size: 50px;
-  }
+  
   .img-bckg_1{
     transform: translate(112%, -134px) !important;
     max-width: 50%;
@@ -1104,19 +960,14 @@ body {
   }
   
 }
-@media (max-width: 320px){
-  #skills .section-title h1 {
-    font-size: 40px;
-    line-height: 50px;
-  }
-}
+
 
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
 
-.contact{
-  margin: 10rem 0 5rem;
+#contact{
+  overflow-x:hidden
 }
 .contact-backg{
   background-color: #fcf6e6;
@@ -1172,19 +1023,7 @@ body {
   justify-content: center;
   padding-left: 4rem;
 }
-.contact .section-title h1{
-  font-family: "Ultra", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 80px;
-  line-height: 80px;
-  /* -webkit-text-stroke: 0.3px #7e6d40;
-  color: #fff; */
-  /* margin-top: 12px; */
-  color: #8c6239;
-  margin-bottom: 0;
-  /* letter-spacing: -1px; */
-}
+
 .contact .cv_dwnld {
   box-shadow: 0px 5px 13px #4d380029;
   color: #4d3800;
@@ -1217,10 +1056,7 @@ body {
       padding-left: 2.5rem;
     }
   
-    .contact .section-title h1 {
-      font-size: 65px;
-      line-height: 62px;
-    }
+    
     .contact-dtls .call a,
     .contact-dtls .email a,
     .contact-dtls .w-app a,
@@ -1245,10 +1081,7 @@ body {
     text-align: center;
     align-items: center;
   }
-  .contact .section-title h1 {
-    font-size: 51px;
-    line-height: 48px;
-  }
+  
   .contact-dtls .call a,
   .contact-dtls .email a,
   .contact-dtls .w-app a,
@@ -1274,19 +1107,15 @@ body {
   }
 }
 @media (max-width:768px) {
-  .contact {
-    margin: 5rem 0;
-  }
+  
   .contact .row{
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
   }
   .contact .section-title {
     justify-content: unset;
   }
-  .contact .section-title h1 {
-    margin-top: 60px;
-  }
+  
   .contact-dtls{
     transform: translateY(-140px);
     height: auto;
@@ -1323,18 +1152,10 @@ body {
 --------------------------------------------------------------*/
 
 footer{
-  background-color: #a27e57;
-  color: #fef1d0;
-  margin-top: 6rem;
-  text-align: center;
+    text-align: center;
 }
 @media (max-width:767.99px) {
   footer{
-    margin-top: 31rem;
-  }
-}
-@media (max-width: 320px){
-  footer{
-    margin-top: 33rem;
+    margin-top: 2rem;
   }
 }
