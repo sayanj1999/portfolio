@@ -13,7 +13,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&family=Ultra&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -26,6 +26,7 @@
 
     <!-- Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/dark-theme.css" rel="stylesheet">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XVC4SP6E8Z"></script>
@@ -41,12 +42,12 @@
     <!-- ======= navigation Section ======= -->
     <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center">
-    
-            <h1 class="logo me-auto"><a href="index.html">Sayan</a></h1>
-    
+            <h1 class="logo me-auto"><a href="index.html">SAYAN</a></h1>
+
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a class="nav-link scrollto" href="#experience">Experiences</a></li>
+                    <li><a class="nav-link scrollto" href="#education">Education</a></li>
                     <li><a class="nav-link scrollto" href="#certificate">Certificates</a></li>
                     <li><a class="nav-link scrollto" href="#projects">My Projects</a></li>
                     <li><a class="nav-link scrollto" href="#skills">My Skills</a></li>
@@ -58,53 +59,166 @@
     </header><!-- End Header -->
 
     <!-- ======= banner Section ======= -->
-    <section id="banner" data-aos="fade-down">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="cover">
-                        <img class="sm_screen_img img-fluid" src="assets/img/profile_image.png" alt="profile_image">
-                        <div data-aos="fade-down" data-aos-delay="200">
-                            <p class="mb-0">Hi there, I am</p>
-                            <h1 class="mb-3">SAYAN JANA</h1>
-                            <div class="designation">
-                                <p class="desg mb-0 anim-typewriter">Data Analyst | Business Analyst</p>
-                                <div class="desg-mobile text-center">
-                                    <p class="desg mb-0">Data Analyst | Business Analyst</p>
+    <section id="banner" data-aos="fade-down" style="padding: 10px 0 40px 0;">
+        
+        <div class="container" style="position: relative; z-index: 1;">
+
+
+            <div class="row align-items-center mt-2">
+                <div class="col-lg-6">
+                    <div class="cover-text" data-aos="fade-down" data-aos-delay="200">
+                        <p class="mb-1 text-muted" style="font-size: 20px;">Hi there, I am</p>
+                        <h1 class="mb-2" style="font-weight: 900; font-size: clamp(60px, 8vw, 90px); line-height: 1.1; letter-spacing: 1px;">
+                            <span style="color: var(--text-main);">SAYAN</span> <span style="color: var(--accent-cyan);">JANA</span>
+                        </h1>
+                        <div class="designation">
+                            <p class="desg mb-3 anim-typewriter" style="color: var(--accent-cyan); font-size: 22px; font-weight: 600; white-space: nowrap; overflow: hidden; display: inline-block;">
+                                Data Analyst &nbsp;|&nbsp; Business Analyst
+                            </p>
+                            <p class="dtls mb-4 text-muted" style="font-size: 16px; max-width: 400px; line-height: 1.6;">
+                                I turn messy data into meaningful insights for your business.
+                            </p>
+                            <a href="assets/Sayan_Jana_Resume.pdf" download="Sayan_Jana_Resume.pdf" class="btn-download-cv d-inline-flex align-items-center justify-content-center" style="border: 1px solid var(--accent-cyan); background: transparent; color: var(--text-main); padding: 12px 24px; border-radius: 8px; font-weight: 500; margin-bottom: 40px; transition: 0.3s; box-shadow: 0 0 10px rgba(6, 182, 212, 0.2);">
+                                Download CV 
+                                <i class="bi bi-download ms-2"></i>
+                            </a>
+                        </div>
+                        <div class="social-connect mt-4">
+
+                                <div class="d-flex align-items-center mb-4">
+                                    <span style="color: var(--accent-cyan); font-weight: 500; font-size: 18px; letter-spacing: 0.5px;">Let's connect</span>
+                                    <div style="height: 1px; width: 250px; background: rgba(6, 182, 212, 0.3); margin-left: 20px;"></div>
                                 </div>
-                                <p class="dtls">
-                                    I turn messy data into meaningful insights for your business.
-                                </p>
-                                <a href="assets/Sayan_Jana_Resume.pdf" download="Sayan_Jana_Resume.pdf" >
-                                    Download CV 
-                                    <i class="bi bi-download"></i>
-                                </a>
+                                <div class="social-links d-flex gap-4">
+                                    <a href="https://www.linkedin.com/in/sayanj1999/" target="_blank" class="social-icon" style="width: 55px; height: 55px; font-size: 24px; border-color: rgba(6, 182, 212, 0.3); color: #fff;"><i class="bi bi-linkedin"></i></a>
+                                    <a href="mailto:sayanjanawd@gmail.com" class="social-icon" style="width: 55px; height: 55px; font-size: 24px; border-color: rgba(6, 182, 212, 0.3); color: var(--accent-cyan);"><i class="bi bi-envelope-fill"></i></a>
+                                    <a href="https://wa.me/+916290316422" target="_blank" class="social-icon" style="width: 55px; height: 55px; font-size: 24px; border-color: rgba(6, 182, 212, 0.3); color: #fff;"><i class="bi bi-whatsapp"></i></a>
+                                    <a href="tel:6290316422" class="social-icon" style="width: 55px; height: 55px; font-size: 24px; border-color: rgba(6, 182, 212, 0.3); color: #fff;"><i class="bi bi-telephone-fill"></i></a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="col-lg-6 dashboard-column">
+                    <div class="dashboard-ui-wrapper position-relative d-flex align-items-center justify-content-center" data-aos="fade-left" data-aos-delay="400" style="height: 550px; perspective: 1000px; background: radial-gradient(circle at center, rgba(6, 182, 212, 0.1) 0%, transparent 60%); border-radius: 50%;">
+                        
+                        <!-- Main Dashboard Panel Group -->
+                        <div class="tilt-group" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-perspective="1000" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; transform-style: preserve-3d;">
+
+                        <!-- Main Dashboard Panel -->
+
+                        <div class="main-dashboard-card glass-panel p-4 position-absolute shadow-lg" style="width: 100%; max-width: 400px; border-radius: 16px; top: 50%; left: 50%; transform: translate(-50%, -50%) translateZ(0px); z-index: 1;">
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <h6 class="mb-0 text-main fw-bold">Sales Overview</h6>
+                                <span class="badge" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: var(--text-muted); font-weight: normal;">This Month <i class="bi bi-chevron-down ms-1"></i></span>
+                            </div>
+                            
+                            <!-- Fake Line Chart -->
+                            <svg viewBox="0 0 400 100" class="w-100 mb-4" style="filter: drop-shadow(0 10px 10px rgba(6,182,212,0.2));">
+                                <path d="M0,80 C50,80 80,40 120,50 C160,60 180,20 220,30 C260,40 300,70 340,60 C380,50 400,20 400,20 L400,100 L0,100 Z" fill="url(#grad)" />
+                                <path d="M0,80 C50,80 80,40 120,50 C160,60 180,20 220,30 C260,40 300,70 340,60 C380,50 400,20 400,20" fill="none" stroke="var(--accent-cyan)" stroke-width="3" />
+                                <circle cx="400" cy="20" r="5" fill="var(--text-main)" stroke="var(--accent-cyan)" stroke-width="2" />
+                                <defs>
+                                    <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" style="stop-color:var(--accent-cyan);stop-opacity:0.3" />
+                                        <stop offset="100%" style="stop-color:var(--accent-cyan);stop-opacity:0" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            
+                            <div class="d-flex justify-content-between text-start mt-2">
+                                <div class="stat-item p-2 rounded" style="background: rgba(255,255,255,0.03);">
+                                    <p class="text-muted small mb-1" style="font-size: 11px;">Total Revenue</p>
+                                    <h5 class="mb-0 fs-6 fw-bold">₹8.42K <span class="ms-1 small" style="color: var(--accent-emerald); font-size: 10px;">+12.5%</span></h5>
+                                </div>
+                                <div class="stat-item p-2 rounded" style="background: rgba(255,255,255,0.03);">
+                                    <p class="text-muted small mb-1" style="font-size: 11px;">New Customers</p>
+                                    <h5 class="mb-0 fs-6 fw-bold">154 <span class="ms-1 small" style="color: var(--accent-emerald); font-size: 10px;">+8.2%</span></h5>
+                                </div>
+                                <div class="stat-item p-2 rounded" style="background: rgba(255,255,255,0.03);">
+                                    <p class="text-muted small mb-1" style="font-size: 11px;">Bounce Rate</p>
+                                    <h5 class="mb-0 fs-6 fw-bold">24.6% <span class="ms-1 small text-danger" style="font-size: 10px;">-3.1%</span></h5>
+                                </div>
                             </div>
                         </div>
                         
-                    </div>
+                        <!-- Floating Card 1: Donut (Top Right) -->
+                        <div style="position: absolute; top: 0%; right: -20px; z-index: 2; transform: translateZ(0px);">
+                            <div class="floating-card glass-panel p-3 shadow" style="border-radius: 12px; width: 220px; animation: float 6s ease-in-out infinite;">
+                                <h6 class="small mb-3 fw-semibold">Top Categories</h6>
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="donut-chart position-relative flex-shrink-0" style="width: 50px; height: 50px; border-radius: 50%; background: conic-gradient(var(--accent-cyan) 45%, var(--accent-emerald) 0 70%, rgba(255,255,255,0.2) 0 90%, rgba(255,255,255,0.05) 0); display: flex; align-items: center; justify-content: center;">
+                                    <div style="width: 30px; height: 30px; background: var(--bg-card); border-radius: 50%;"></div>
+                                </div>
+                                <div class="w-100" style="font-size: 10px;">
+                                    <div class="d-flex justify-content-between mb-1"><span class="text-muted">Technology</span> <span>45%</span></div>
+                                    <div class="d-flex justify-content-between mb-1"><span class="text-muted">Furniture</span> <span>25%</span></div>
+                                    <div class="d-flex justify-content-between mb-1"><span class="text-muted">Office</span> <span>20%</span></div>
+                                    <div class="d-flex justify-content-between"><span class="text-muted">Others</span> <span>10%</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Floating Card 2: Bar Chart (Top Left) -->
+                        <div style="position: absolute; top: 30%; left: -20px; z-index: 2; transform: translateZ(0px);">
+                            <div class="floating-card glass-panel p-3 shadow" style="border-radius: 12px; width: 200px; animation: float 7s ease-in-out infinite alternate;">
+                                <h6 class="small mb-3 fw-semibold">Performance</h6>
+                            <div class="d-flex align-items-end justify-content-between" style="height: 40px;">
+                                <div style="height: 30%; background: rgba(6,182,212,0.4); width: 8px; border-radius: 2px;"></div>
+                                <div style="height: 50%; background: rgba(6,182,212,0.6); width: 8px; border-radius: 2px;"></div>
+                                <div style="height: 40%; background: rgba(6,182,212,0.5); width: 8px; border-radius: 2px;"></div>
+                                <div style="height: 70%; background: var(--accent-cyan); width: 8px; border-radius: 2px; box-shadow: 0 0 8px rgba(6,182,212,0.5);"></div>
+                                <div style="height: 60%; background: rgba(6,182,212,0.7); width: 8px; border-radius: 2px;"></div>
+                                <div style="height: 80%; background: var(--accent-cyan); width: 8px; border-radius: 2px; box-shadow: 0 0 8px rgba(6,182,212,0.5);"></div>
+                                <div style="height: 100%; background: var(--accent-cyan); width: 8px; border-radius: 2px; box-shadow: 0 0 10px rgba(6,182,212,0.8);"></div>
+                            </div>
+                        </div>
+                        </div>
+                        
+                        <!-- Floating Card 3: Insights (Bottom Center) -->
+                        <div style="position: absolute; bottom: 0%; right: 10px; z-index: 2; transform: translateZ(0px);">
+                            <div class="floating-card glass-panel p-3 shadow" style="border-radius: 12px; width: 240px; animation: float 5s ease-in-out infinite;">
+                                <h6 class="small mb-2 fw-semibold">Data Insights</h6>
+                            <div class="d-flex align-items-center gap-3">
+                                <p class="text-muted mb-0" style="font-size: 11px; line-height: 1.4;">Data tells a story. I help you make better decisions.</p>
+                                <div class="d-flex align-items-center justify-content-center rounded-circle flex-shrink-0" style="width: 35px; height: 35px; border: 1px solid var(--accent-cyan); background: rgba(6,182,212,0.1);">
+                                    <i class="bi bi-graph-up-arrow" style="color: var(--accent-cyan); font-size: 14px;"></i>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
                 </div>
             </div>
         </div>  
     </section><!-- End banner -->
 
     <!-- ======= About Me Section ======= -->
-    <section id="abt_me"  >
+    <section id="abt_me" class="py-5" >
         <div class="container" >
-            <div class="row">
-                <div class="col-md-5">
-                    <div class="abt_me_hd" data-aos="fade-up" data-aos-delay="200">
-                        <h1>About Me <i  class="bi bi-arrow-right-circle-fill"></i></h1>
-                        <img class="abt_me_bckg img-fluid" src="assets/img/laptop.jpg" alt="laptop">
-                        
+            <div class="row align-items-center">
+                <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+                    <div class="abt_me_hd position-relative text-center text-lg-start">
+                        <h1 class="section-heading fw-bold mb-3 d-flex align-items-center justify-content-center justify-content-lg-start">
+                            About Me 
+                            <span class="d-none d-lg-flex align-items-center ms-3">
+                                <i class="bi bi-arrow-right-circle-fill" style="color: var(--accent-emerald); line-height: 1;"></i>
+                            </span>
+                        </h1>
                     </div>
                 </div>
-                <div class="col-md-7">
-                    <div class="envelope d-flex align-items-center h-100">
-                        <p class="abt_me_dtls" data-aos="fade-up" data-aos-delay="200">
-                            I'm a <span>Data Analyst with a Master's Degree in Data Science</span>, experienced in transforming complex datasets into clear, actionable insights. I work with <span>Python, SQL, Excel, Power BI, and R</span> to perform <span>data cleaning, exploratory analysis, statistical analysis, and dashboard development</span> that drive informed decision-making. My experience spans end-to-end analytics projects across healthcare, mobility, sports, and real estate, where I delivered insights through structured analysis and impactful visualizations.
-                            <br/><br/>
-                            Alongside my analytics background, I bring <span>2+ years of professional experience in Web and Graphic design</span>, strengthening my ability to communicate insights through clear, intuitive, and visually effective storytelling. This combination enables me to bridge technical analysis and business understanding while thriving in fast-paced, deadline-driven environments.
+                <div class="col-lg-7 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="300">
+                    <div class="glass-panel p-4 p-lg-5 rounded-4 h-100 shadow-lg">
+                        <p class="abt_me_dtls mb-4" style="line-height: 1.8;">
+                            I'm a <span style="color: var(--accent-cyan); font-weight: 600;">Data Analyst and AI/ML enthusiast</span> with a Master's degree in Data Science, passionate about building intelligent, data-driven applications that solve real-world problems. My expertise spans <span style="color: var(--accent-emerald); font-weight: 600;">Python, SQL, Machine Learning, Power BI, Excel, and R</span>, with hands-on experience in data analysis, statistical modeling, predictive analytics, recommendation systems, and business intelligence.
+                        </p>
+                        <p class="abt_me_dtls mb-4" style="line-height: 1.8;">
+                            I've developed projects across AI, healthcare, mobility, real estate, and sports analytics, including an NLP-based Movie Recommendation System, predictive housing price analysis, and interactive business intelligence dashboards. I enjoy transforming raw data into meaningful insights through data preprocessing, feature engineering, visualization, and machine learning.
+                        </p>
+                        <p class="abt_me_dtls mb-0" style="line-height: 1.8;">
+                            Beyond analytics, I bring <span style="color: var(--accent-cyan); font-weight: 600;">2+ years of professional experience in Web and Graphic Design</span>, giving me a unique ability to combine technical expertise with user-centric design and effective data storytelling. I'm always eager to learn emerging AI technologies and build scalable solutions that create measurable business impact.
                         </p>
                     </div>
                 </div>
@@ -113,619 +227,1515 @@
     </section><!-- End About Me -->
 
     <!-- ======= My Experience Section ======= -->
-    <section id="experience" class="experience">
-        <div class="container" data-aos="fade-up">
+    <section id="experience" class="experience pt-5">
+        <div class="container">
     
-            <div class="section-title">
-                <h1 class="mt-4">Experiences</h1>
+            <div class="section-title text-center mb-5">
+                <h1 class="section-heading fw-bold mb-3 mt-4">Experiences</h1>
+                <div class="d-flex justify-content-center align-items-center mt-3">
+                    <div style="width: 40px; height: 1px; background: rgba(255,255,255,0.2);"></div>
+                    <div style="width: 6px; height: 6px; border-radius: 50%; background: var(--accent-cyan); margin: 0 10px;"></div>
+                    <div style="width: 40px; height: 1px; background: rgba(255,255,255,0.2);"></div>
+                </div>
             </div>
     
-            <div class="row" data-aos="fade-up" data-aos-delay="200">
+            <div class="timeline-container position-relative">
+                <div class="timeline-line position-absolute top-0 bottom-0 start-50 translate-middle-x d-none d-md-block" style="width: 2px; background: linear-gradient(to bottom, var(--accent-cyan), var(--accent-emerald));"></div>
 
-                <div class="col-lg-6">
-                    <div class="experience-dtls exp-1">
-                        <div>
-                            <p class="exp-desg mb-0">Business Analytics Intern</p>
-                            <p class="exp-comp mb-0">Labmentix</p>
-                            <p class="exp-date mb-6">Sept, 2025 - Present</p>
-                            <ul class="exp-details pt-1 ">
-                                <li>Worked on end-to-end data analysis by cleaning, transforming, and validating datasets to ensure accuracy and reliability.</li>
-                                <li>Built interactive Power BI dashboards using Power Query and DAX to track KPIs and trends.</li>
-                                <li>Performed exploratory data analysis using Python, SQL, and Excel to generate actionable insights, and delivered clear, stakeholder-ready reports while managing multiple analytical tasks within tight timelines.</li>
+                <!-- Exp 1 -->
+                <div class="row mb-5 timeline-item align-items-center">
+                    <div class="col-md-5 text-md-end mb-3 mb-md-0">
+                        <div class="experience-dtls glass-panel p-4 rounded-4 text-start d-inline-block w-100 shadow-lg">
+                            <p class="exp-desg mb-1 h4">Business Analytics Intern</p>
+                            <p class="exp-comp mb-2 fw-semibold" style="color: var(--text-main);">Labmentix</p>
+                            <ul class="exp-details pt-2 ps-3 mb-3 text-muted small">
+                                <li>Performed data cleaning, transformation, and validation to support business reporting and analytics workflows.</li>
+                                <li>Conducted exploratory data analysis (EDA) to identify customer trends, operational patterns, and performance insights.</li>
+                                <li>Built interactive Power BI dashboards for KPI monitoring and business performance tracking.</li>
+                                <li>Collaborated with stakeholders to translate business requirements into analytical reports and actionable insights.</li>
+                                <li>Applied statistical analysis and feature engineering techniques to improve dataset usability and reporting accuracy.</li>
+                                <li>Supported data-driven decision-making through visual storytelling and analytical presentations.</li>
                             </ul>
+                            <div class="exp-skills d-flex flex-wrap gap-2 justify-content-start justify-content-md-end">
+                                <span class="badge" style="background: rgba(6,182,212,0.1); color: var(--accent-cyan); border: 1px solid rgba(6,182,212,0.2);">Power BI</span>
+                                <span class="badge" style="background: rgba(6,182,212,0.1); color: var(--accent-cyan); border: 1px solid rgba(6,182,212,0.2);">Excel</span>
+                                <span class="badge" style="background: rgba(6,182,212,0.1); color: var(--accent-cyan); border: 1px solid rgba(6,182,212,0.2);">SQL</span>
+                                <span class="badge" style="background: rgba(6,182,212,0.1); color: var(--accent-cyan); border: 1px solid rgba(6,182,212,0.2);">Python</span>
+                            </div>
                         </div>
-                        
-                        <div class="exp-skills d-flex align-items-end">
-                            <span>Data Cleaning</span>
-                            <span>Data Preprocessing</span>
-                            <span>Exploratory Data Analysis (EDA)</span>
-                            <span>Insight Generation</span>
-                            <span>Trend Analysis</span>
-                            <span>Interactive Dashboards</span>
-                            <span>Power BI</span>
-                            <span>Microsoft Excel</span>
-                            <span>Data Visualization</span>
-                            <span>SQL</span>
-                            <span>Python (Pandas, NumPy)</span>
-                            <span>Reporting & Documentation</span>
-                            <span>Problem-Solving</span>
-
-                        </div>
+                    </div>
+                    <div class="col-md-2 text-center position-relative d-none d-md-block">
+                        <div class="timeline-dot rounded-circle d-inline-block shadow" style="width: 20px; height: 20px; background: var(--bg-dark); border: 4px solid var(--accent-cyan); position: relative; z-index: 2;"></div>
+                    </div>
+                    <div class="col-md-5 text-md-start">
+                        <p class="exp-date h5 fw-bold mb-0 d-none d-md-block" style="color: var(--accent-emerald);">Sept, 2025 - Present</p>
+                        <p class="exp-date h6 fw-bold mb-0 d-md-none" style="color: var(--accent-emerald);">Sept, 2025 - Present</p>
                     </div>
                 </div>
 
-                <div class="col-lg-6">
-                    <div class="experience-dtls exp-2">
-                        <div>
-                            <p class="exp-desg mb-0">WEB DESIGNER</p>
-                            <p class="exp-comp mb-0">The Business Research Company</p>
-                            <p class="exp-date mb-6">Oct, 2022 - Mar, 2023</p>
-                            <p class="exp-details pt-1">
-                                Designed and developed responsive, user-friendly, and visually appealing websites aligned with company branding using HTML, CSS, Bootstrap, and JavaScript. Optimized site performance and loading speed by leveraging Google Analytics and GTmetrix to identify and resolve bottlenecks.
+                <!-- Exp 2 -->
+                <div class="row mb-5 timeline-item align-items-center flex-row-reverse">
+                    <div class="col-md-5 text-md-start mb-3 mb-md-0">
+                        <div class="experience-dtls glass-panel p-4 rounded-4 text-start d-inline-block w-100 shadow-lg">
+                            <p class="exp-desg mb-1 h4">WEB DESIGNER</p>
+                            <p class="exp-comp mb-2 fw-semibold" style="color: var(--text-main);">The Business Research Company</p>
+                            <p class="exp-details pt-2 mb-3 text-muted small">
+                                Designed and developed responsive, user-friendly, and visually appealing websites aligned with company branding using HTML, CSS, Bootstrap, and JavaScript. Optimized site performance and loading speed.
                             </p>
-                        </div>
-                        
-                        <div class="exp-skills d-flex align-items-end">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JS</span>
-                            <span>Bootstrap</span>
-                            <span>Google Analytics</span>
-                            <span>GT Metrix</span>
-                            <span>Wordpress</span>
+                            <div class="exp-skills d-flex flex-wrap gap-2">
+                                <span class="badge" style="background: rgba(16,185,129,0.1); color: var(--accent-emerald); border: 1px solid rgba(16,185,129,0.2);">HTML/CSS</span>
+                                <span class="badge" style="background: rgba(16,185,129,0.1); color: var(--accent-emerald); border: 1px solid rgba(16,185,129,0.2);">JS</span>
+                                <span class="badge" style="background: rgba(16,185,129,0.1); color: var(--accent-emerald); border: 1px solid rgba(16,185,129,0.2);">Bootstrap</span>
+                            </div>
                         </div>
                     </div>
+                    <div class="col-md-2 text-center position-relative d-none d-md-block">
+                        <div class="timeline-dot rounded-circle d-inline-block shadow" style="width: 20px; height: 20px; background: var(--bg-dark); border: 4px solid var(--accent-emerald); position: relative; z-index: 2;"></div>
+                    </div>
+                    <div class="col-md-5 text-md-end">
+                        <p class="exp-date h5 fw-bold mb-0 d-none d-md-block" style="color: var(--accent-cyan);">Oct, 2022 - Mar, 2023</p>
+                        <p class="exp-date h6 fw-bold mb-0 d-md-none" style="color: var(--accent-cyan);">Oct, 2022 - Mar, 2023</p>
+                    </div>
                 </div>
-                
-                <div class="col-lg-6">
-                    <div class="experience-dtls exp-3">
-                        <div>
-                            <p class="exp-desg mb-0">GRPAHIC DESIGNER</p>
-                            <p class="exp-comp mb-0">Alteus Biogenics Pvt. Ltd.</p>
-                            <p class="exp-date mb-6">Nov, 2020 - May, 2022</p>
-                            <p class="exp-details pt-1">
+
+                <!-- Exp 3 -->
+                <div class="row timeline-item align-items-center">
+                    <div class="col-md-5 text-md-end mb-3 mb-md-0">
+                        <div class="experience-dtls glass-panel p-4 rounded-4 text-start d-inline-block w-100 shadow-lg">
+                            <p class="exp-desg mb-1 h4">GRAPHIC DESIGNER</p>
+                            <p class="exp-comp mb-2 fw-semibold" style="color: var(--text-main);">Alteus Biogenics Pvt. Ltd.</p>
+                            <p class="exp-details pt-2 mb-3 text-muted small">
                                 Created a variety of design materials—including business cards, folders, banners, pamphlets, and social media creatives—while maintaining consistent and high-quality brand visuals.
                             </p>
-                        </div>
-
-                        <div class="exp-skills d-flex align-items-end">
-                          <span>Adobe Photoshop</span>
-                          <span>Adobe Illustrator</span>
-                          <span>Letterhead</span>
-                          <span>Business Cards</span>
-                          <span>Folders</span>
-                          <span>Pamphlet</span>
-                          <span>Social Media Post</span>
-                          <span>Flyers</span>
+                            <div class="exp-skills d-flex flex-wrap gap-2 justify-content-start justify-content-md-end">
+                                <span class="badge" style="background: rgba(6,182,212,0.1); color: var(--accent-cyan); border: 1px solid rgba(6,182,212,0.2);">Photoshop</span>
+                                <span class="badge" style="background: rgba(6,182,212,0.1); color: var(--accent-cyan); border: 1px solid rgba(6,182,212,0.2);">Illustrator</span>
+                            </div>
                         </div>
                     </div>
-                </div>               
-
-            </div>
-        </div>
-    </section><!-- End Experience -->
-
-        <!-- ======= My Certificate Section ======= -->
-    <section id="certificate" class="certificate">
-        <div class="container" data-aos="fade-up">
-    
-            <div class="row" data-aos="fade-up" data-aos-delay="200">
-
-                <div class="col-lg-4">
-                    <div class="certificate-title">
-                        <p class="mb-0 title_head">Check out my </p>
-                        <h1 class="">Certificates</h1>
-                        <p class="cert_info">
-                            I have done various programming courses and certifications to increase my skills and I'm sharing few of them.
-                        </p>
+                    <div class="col-md-2 text-center position-relative d-none d-md-block">
+                        <div class="timeline-dot rounded-circle d-inline-block shadow" style="width: 20px; height: 20px; background: var(--bg-dark); border: 4px solid var(--accent-cyan); position: relative; z-index: 2;"></div>
+                    </div>
+                    <div class="col-md-5 text-md-start">
+                        <p class="exp-date h5 fw-bold mb-0 d-none d-md-block" style="color: var(--accent-emerald);">Nov, 2020 - May, 2022</p>
+                        <p class="exp-date h6 fw-bold mb-0 d-md-none" style="color: var(--accent-emerald);">Nov, 2020 - May, 2022</p>
                     </div>
                 </div>
-                
-                <div class="col-lg-8">
-                    <div class="slider" data-aos="fade-up" data-aos-delay="200">
-                        <div class="certificate owl-carousel owl-theme">
-                            <div class="item">
-                                <a href="https://www.coursera.org/account/accomplishments/professional-cert/TANG3F2B92B2" target="_blank">
-                                    <img class="img-fluid rounded" src="assets/img/Power_BI.png" alt="Microsoft Power BI Data Analyst_TANG3F2B92B2">
-                                </a>
-                                <p class="text-center mb-0 mt-4">Microsoft Power BI</p>
-                                <p class="text-center mb-0 company">Microsoft</p>
-                            </div>
-                            <div class="item">
-                                <a href="https://www.coursera.org/account/accomplishments/specialization/MOD9BXODNHJY" target="_blank">
-                                    <img class="img-fluid rounded" src="assets/img/BA.png" alt="Business Statistics and Analysis_MOD9BXODNHJY">
-                                </a>
-                                <p class="text-center mb-0 mt-4">Business Analysis Specialization</p>
-                                <p class="text-center mb-0 company">Rice University</p>
-                            </div>
-                            <div class="item">
-                                <a href="https://www.coursera.org/account/accomplishments/verify/0127A98G9YHY" target="_blank">
-                                    <img class="img-fluid rounded" src="assets/img/sql.png" alt="Databases and SQL for Data Science with Python Certoficate_0127A98G9YHY">
-                                </a>
-                                <p class="text-center mb-0 mt-4">SQL with Python</p>
-                                <p class="text-center mb-0 company">IBM</p>
-                            </div>
-                            <div class="item">
-                                <a href="https://www.coursera.org/account/accomplishments/verify/VD93RBXYYD28" target="_blank">
-                                    <img class="img-fluid rounded" src="assets/img/R_Linear Regression.png" alt="Building Statistical Models in R: Linear Regression_VD93RBXYYD28">
-                                </a>
-                                <p class="text-center mb-0 mt-4">Linear Regression in R</p>
-                                <p class="text-center mb-0 company">Coursera</p>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>               
 
             </div>
         </div>
-    </section><!-- End Experience -->
+    
+
+    <!-- ======= My Education Section ======= -->
+    <section id="education" class="experience py-5">
+        <div class="container">
+    
+            <div class="section-title text-center mb-5">
+                <p class="text-uppercase fw-semibold mb-2" style="color: var(--accent-emerald); letter-spacing: 2px; font-size: 0.85rem;">ACADEMIC BACKGROUND</p>
+                <h1 class="section-heading fw-bold mb-3 mt-2" style="color: var(--text-main);">Education</h1>
+                <div class="d-flex justify-content-center align-items-center mt-3">
+                    <div style="width: 40px; height: 1px; background: rgba(255,255,255,0.2);"></div>
+                    <div style="width: 6px; height: 6px; border-radius: 50%; background: var(--accent-emerald); margin: 0 10px;"></div>
+                    <div style="width: 40px; height: 1px; background: rgba(255,255,255,0.2);"></div>
+                </div>
+            </div>
+    
+            <div class="timeline-container position-relative">
+                <div class="timeline-line position-absolute top-0 bottom-0 start-50 translate-middle-x d-none d-md-block" style="width: 2px; background: linear-gradient(to bottom, var(--accent-emerald), var(--accent-cyan));"></div>
+
+                <!-- Edu 1 -->
+                <div class="row mb-5 timeline-item align-items-center">
+                    <div class="col-md-5 text-md-end mb-3 mb-md-0">
+                        <div class="experience-dtls glass-panel p-4 rounded-4 text-start d-inline-block w-100 shadow-lg">
+                            <p class="exp-desg mb-1 h4">M.Sc. in Data Science</p>
+                            <p class="exp-comp mb-2 fw-semibold" style="color: var(--text-main);">Manipal Academy of Higher Education</p>
+                            <p class="mb-0 text-center text-muted small"><i class="bi bi-star-fill text-warning me-1"></i> 9.21 C.G.P.A.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 text-center position-relative d-none d-md-block">
+                        <div class="timeline-dot rounded-circle position-absolute top-50 start-50 translate-middle" style="width: 20px; height: 20px; background: var(--bg-dark); border: 4px solid var(--accent-emerald); z-index: 2;"></div>
+                    </div>
+                    <div class="col-md-5 text-md-start">
+                        <span class="badge rounded-pill px-3 py-2" style="background: rgba(16, 185, 129, 0.1); color: var(--accent-emerald); border: 1px solid rgba(16, 185, 129, 0.2); font-size: 0.9rem;">2023 - 2025</span>
+                    </div>
+                </div>
+
+                <!-- Edu 2 -->
+                <div class="row mb-5 timeline-item align-items-center flex-md-row-reverse">
+                    <div class="col-md-5 text-md-start mb-3 mb-md-0">
+                        <div class="experience-dtls glass-panel p-4 rounded-4 text-start d-inline-block w-100 shadow-lg">
+                            <p class="exp-desg mb-1 h4">B.Sc. in Economics</p>
+                            <p class="exp-comp mb-0 fw-semibold" style="color: var(--text-main);">Calcutta University</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 text-center position-relative d-none d-md-block">
+                        <div class="timeline-dot rounded-circle position-absolute top-50 start-50 translate-middle" style="width: 20px; height: 20px; background: var(--bg-dark); border: 4px solid var(--accent-cyan); z-index: 2;"></div>
+                    </div>
+                    <div class="col-md-5 text-md-end">
+                        <span class="badge rounded-pill px-3 py-2" style="background: rgba(6, 182, 212, 0.1); color: var(--accent-cyan); border: 1px solid rgba(6, 182, 212, 0.2); font-size: 0.9rem;">2018 - 2021</span>
+                    </div>
+                </div>
+
+                <!-- Edu 3 -->
+                <div class="row mb-5 timeline-item align-items-center">
+                    <div class="col-md-5 text-md-end mb-3 mb-md-0">
+                        <div class="experience-dtls glass-panel p-4 rounded-4 text-start d-inline-block w-100 shadow-lg">
+                            <p class="exp-desg mb-1 h4">Higher Secondary Education</p>
+                            <p class="exp-comp mb-0 fw-semibold" style="color: var(--text-main);">CBSE</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 text-center position-relative d-none d-md-block">
+                        <div class="timeline-dot rounded-circle position-absolute top-50 start-50 translate-middle" style="width: 20px; height: 20px; background: var(--bg-dark); border: 4px solid var(--accent-emerald); z-index: 2;"></div>
+                    </div>
+                    <div class="col-md-5 text-md-start">
+                        <span class="badge rounded-pill px-3 py-2" style="background: rgba(16, 185, 129, 0.1); color: var(--accent-emerald); border: 1px solid rgba(16, 185, 129, 0.2); font-size: 0.9rem;">Apr, 2018</span>
+                    </div>
+                </div>
+
+                <!-- Edu 4 -->
+                <div class="row mb-0 timeline-item align-items-center flex-md-row-reverse">
+                    <div class="col-md-5 text-md-start mb-3 mb-md-0">
+                        <div class="experience-dtls glass-panel p-4 rounded-4 text-start d-inline-block w-100 shadow-lg">
+                            <p class="exp-desg mb-1 h4">Secondary Education</p>
+                            <p class="exp-comp mb-0 fw-semibold" style="color: var(--text-main);">CBSE</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 text-center position-relative d-none d-md-block">
+                        <div class="timeline-dot rounded-circle position-absolute top-50 start-50 translate-middle" style="width: 20px; height: 20px; background: var(--bg-dark); border: 4px solid var(--accent-cyan); z-index: 2;"></div>
+                    </div>
+                    <div class="col-md-5 text-md-end">
+                        <span class="badge rounded-pill px-3 py-2" style="background: rgba(6, 182, 212, 0.1); color: var(--accent-cyan); border: 1px solid rgba(6, 182, 212, 0.2); font-size: 0.9rem;">Apr, 2016</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section><!-- End Education -->
+</section><!-- End Experience -->
+
+    <!-- ======= My Certificate Section ======= -->
+    <section id="certificate" class="certificate py-5">
+        <div class="container" data-aos="fade-up">
+
+            <!-- Header -->
+            <div class="cert-section-header mb-5">
+                <p class="mb-2" style="color: var(--accent-cyan); font-size: 0.85rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;">My Credentials</p>
+                <h1 class="section-heading fw-bold mb-3" style="color: var(--text-main);">Professional <span style="color: var(--accent-cyan);">Certifications</span></h1>
+                <p style="max-width: 520px; line-height: 1.7; color: var(--text-muted) !important;">Industry-recognized certifications validating my expertise in Data Analytics, Business Intelligence, SQL, Python and Visualization.</p>
+            </div>
+
+            <!-- Stats Row -->
+            <div class="row g-3 mb-5" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-6 col-md-3">
+                    <div class="cert-stat-card glass-panel p-4 rounded-4 h-100">
+                        <i class="bi bi-award fs-2 mb-2 d-block" style="color: var(--accent-cyan);"></i>
+                        <div class="fw-bold" style="font-size: 2rem; color: var(--text-main); font-family: 'Outfit', sans-serif;">4</div>
+                        <div class="fw-semibold mb-2" style="color: var(--accent-cyan); font-size: 0.85rem;">Certifications</div>
+                        <div class="text-muted small">Professional certifications earned</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="cert-stat-card glass-panel p-4 rounded-4 h-100">
+                        <i class="bi bi-book fs-2 mb-2 d-block" style="color: var(--accent-emerald);"></i>
+                        <div class="fw-bold" style="font-size: 2rem; color: var(--text-main); font-family: 'Outfit', sans-serif;">120+</div>
+                        <div class="fw-semibold mb-2" style="color: var(--accent-emerald); font-size: 0.85rem;">Learning Hours</div>
+                        <div class="text-muted small">Hours spent on learning and upskilling</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="cert-stat-card glass-panel p-4 rounded-4 h-100">
+                        <i class="bi bi-globe fs-2 mb-2 d-block" style="color: var(--accent-cyan);"></i>
+                        <div class="fw-bold" style="font-size: 2rem; color: var(--text-main); font-family: 'Outfit', sans-serif;">3</div>
+                        <div class="fw-semibold mb-2" style="color: var(--accent-cyan); font-size: 0.85rem;">Platforms</div>
+                        <div class="text-muted small">Microsoft, Coursera, IBM</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="cert-stat-card glass-panel p-4 rounded-4 h-100">
+                        <i class="bi bi-bar-chart-line fs-2 mb-2 d-block" style="color: var(--accent-emerald);"></i>
+                        <div class="fw-bold" style="font-size: 2rem; color: var(--text-main); font-family: 'Outfit', sans-serif;">15+</div>
+                        <div class="fw-semibold mb-2" style="color: var(--accent-emerald); font-size: 0.85rem;">Skills Covered</div>
+                        <div class="text-muted small">Tools and technologies mastered</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Certs Header -->
+            <div class="d-flex align-items-center justify-content-between mb-4" data-aos="fade-up">
+                <div>
+                    <h2 class="fw-bold mb-0" style="color: var(--text-main); font-size: 1.5rem;">Featured Certifications</h2>
+                    <div style="width: 48px; height: 3px; background: var(--accent-cyan); margin-top: 8px; border-radius: 2px;"></div>
+                </div>
+            </div>
+
+            <!-- Certificate Cards Grid -->
+            <div class="row g-4" data-aos="fade-up" data-aos-delay="100">
+
+                <!-- Card 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="cert-card glass-panel rounded-4 overflow-hidden h-100">
+                        <a href="https://www.coursera.org/account/accomplishments/professional-cert/TANG3F2B92B2" target="_blank">
+                            <img src="assets/img/Power_BI.png" class="img-fluid w-100" alt="Microsoft Power BI Data Analyst" style="height: 180px; object-fit: cover;">
+                        </a>
+                        <div class="p-4">
+                            <div class="d-flex align-items-start gap-2 mb-2">
+                                <div class="cert-issuer-icon d-flex align-items-center justify-content-center rounded-2 flex-shrink-0" style="width: 32px; height: 32px; background: rgba(6,182,212,0.15);">
+                                    <i class="bi bi-microsoft" style="color: var(--accent-cyan); font-size: 1rem;"></i>
+                                </div>
+                                <h5 class="mb-0 fw-bold" style="color: var(--text-main); font-size: 0.95rem; line-height: 1.3;">Microsoft Power BI Data Analyst</h5>
+                            </div>
+                            <p class="mb-2 fw-semibold small" style="color: var(--accent-cyan);">Microsoft</p>
+                            <p class="text-muted small mb-2"><i class="bi bi-calendar3 me-1"></i>Issued: Apr 12, 2025 &nbsp;|&nbsp; ID: TANG3F2B...</p>
+                            <div class="d-flex align-items-center gap-1 mb-3">
+                                <i class="bi bi-patch-check-fill" style="color: #10b981;"></i>
+                                <span class="small fw-semibold" style="color: #10b981;">Credential Verified</span>
+                            </div>
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="cert-skill-tag">Power BI</span>
+                                <span class="cert-skill-tag">DAX</span>
+                                <span class="cert-skill-tag">Power Query</span>
+                                <span class="cert-skill-tag">Data Visualization</span>
+                            </div>
+                            <a href="https://www.coursera.org/account/accomplishments/professional-cert/TANG3F2B92B2" target="_blank" class="cert-view-btn d-flex align-items-center justify-content-center gap-2 w-100 rounded-3 py-2 text-decoration-none fw-semibold small">
+                                View Credential <i class="bi bi-box-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="cert-card glass-panel rounded-4 overflow-hidden h-100">
+                        <a href="https://www.coursera.org/account/accomplishments/specialization/MOD9BXODNHJY" target="_blank">
+                            <img src="assets/img/BA.png" class="img-fluid w-100" alt="Business Analysis Specialization" style="height: 180px; object-fit: cover;">
+                        </a>
+                        <div class="p-4">
+                            <div class="d-flex align-items-start gap-2 mb-2">
+                                <div class="cert-issuer-icon d-flex align-items-center justify-content-center rounded-2 flex-shrink-0" style="width: 32px; height: 32px; background: rgba(16,185,129,0.15);">
+                                    <i class="bi bi-building" style="color: var(--accent-emerald); font-size: 1rem;"></i>
+                                </div>
+                                <h5 class="mb-0 fw-bold" style="color: var(--text-main); font-size: 0.95rem; line-height: 1.3;">Business Analysis Specialization</h5>
+                            </div>
+                            <p class="mb-2 fw-semibold small" style="color: var(--accent-cyan);">Rice University</p>
+                            <p class="text-muted small mb-2"><i class="bi bi-calendar3 me-1"></i>Issued: Apr 28, 2025 &nbsp;|&nbsp; ID: MOD9BX...</p>
+                            <div class="d-flex align-items-center gap-1 mb-3">
+                                <i class="bi bi-patch-check-fill" style="color: #10b981;"></i>
+                                <span class="small fw-semibold" style="color: #10b981;">Credential Verified</span>
+                            </div>
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="cert-skill-tag">Business Analysis</span>
+                                <span class="cert-skill-tag">Statistics</span>
+                                <span class="cert-skill-tag">Excel</span>
+                                <span class="cert-skill-tag">Data Analysis</span>
+                            </div>
+                            <a href="https://www.coursera.org/account/accomplishments/specialization/MOD9BXODNHJY" target="_blank" class="cert-view-btn d-flex align-items-center justify-content-center gap-2 w-100 rounded-3 py-2 text-decoration-none fw-semibold small">
+                                View Credential <i class="bi bi-box-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="cert-card glass-panel rounded-4 overflow-hidden h-100">
+                        <a href="https://www.coursera.org/account/accomplishments/verify/0127A98G9YHY" target="_blank">
+                            <img src="assets/img/sql.png" class="img-fluid w-100" alt="SQL with Python" style="height: 180px; object-fit: cover;">
+                        </a>
+                        <div class="p-4">
+                            <div class="d-flex align-items-start gap-2 mb-2">
+                                <div class="cert-issuer-icon d-flex align-items-center justify-content-center rounded-2 flex-shrink-0" style="width: 32px; height: 32px; background: rgba(6,182,212,0.15);">
+                                    <i class="bi bi-cpu" style="color: var(--accent-cyan); font-size: 1rem;"></i>
+                                </div>
+                                <h5 class="mb-0 fw-bold" style="color: var(--text-main); font-size: 0.95rem; line-height: 1.3;">SQL with Python</h5>
+                            </div>
+                            <p class="mb-2 fw-semibold small" style="color: var(--accent-cyan);">IBM</p>
+                            <p class="text-muted small mb-2"><i class="bi bi-calendar3 me-1"></i>Issued: Mar 18, 2025 &nbsp;|&nbsp; ID: 0127A9...</p>
+                            <div class="d-flex align-items-center gap-1 mb-3">
+                                <i class="bi bi-patch-check-fill" style="color: #10b981;"></i>
+                                <span class="small fw-semibold" style="color: #10b981;">Credential Verified</span>
+                            </div>
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="cert-skill-tag">SQL</span>
+                                <span class="cert-skill-tag">Python</span>
+                                <span class="cert-skill-tag">Database</span>
+                                <span class="cert-skill-tag">Data Analysis</span>
+                            </div>
+                            <a href="https://www.coursera.org/account/accomplishments/verify/0127A98G9YHY" target="_blank" class="cert-view-btn d-flex align-items-center justify-content-center gap-2 w-100 rounded-3 py-2 text-decoration-none fw-semibold small">
+                                View Credential <i class="bi bi-box-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="cert-card glass-panel rounded-4 overflow-hidden h-100">
+                        <a href="https://www.coursera.org/account/accomplishments/verify/VD93RBXYYD28" target="_blank">
+                            <img src="assets/img/R_Linear Regression.png" class="img-fluid w-100" alt="Linear Regression in R" style="height: 180px; object-fit: cover;">
+                        </a>
+                        <div class="p-4">
+                            <div class="d-flex align-items-start gap-2 mb-2">
+                                <div class="cert-issuer-icon d-flex align-items-center justify-content-center rounded-2 flex-shrink-0" style="width: 32px; height: 32px; background: rgba(16,185,129,0.15);">
+                                    <i class="bi bi-graph-up-arrow" style="color: var(--accent-emerald); font-size: 1rem;"></i>
+                                </div>
+                                <h5 class="mb-0 fw-bold" style="color: var(--text-main); font-size: 0.95rem; line-height: 1.3;">Linear Regression in R</h5>
+                            </div>
+                            <p class="mb-2 fw-semibold small" style="color: var(--accent-cyan);">Coursera</p>
+                            <p class="text-muted small mb-2"><i class="bi bi-calendar3 me-1"></i>Issued: Jan 10, 2025 &nbsp;|&nbsp; ID: VD93RB...</p>
+                            <div class="d-flex align-items-center gap-1 mb-3">
+                                <i class="bi bi-patch-check-fill" style="color: #10b981;"></i>
+                                <span class="small fw-semibold" style="color: #10b981;">Credential Verified</span>
+                            </div>
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="cert-skill-tag">R Language</span>
+                                <span class="cert-skill-tag">Statistics</span>
+                                <span class="cert-skill-tag">Regression</span>
+                                <span class="cert-skill-tag">Modeling</span>
+                            </div>
+                            <a href="https://www.coursera.org/account/accomplishments/verify/VD93RBXYYD28" target="_blank" class="cert-view-btn d-flex align-items-center justify-content-center gap-2 w-100 rounded-3 py-2 text-decoration-none fw-semibold small">
+                                View Credential <i class="bi bi-box-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section><!-- End Certificate -->
 
     <!-- ======= My Project Section ======= -->
-    <section id="projects" class="projects">
+    <section id="projects" class="projects py-5">
         <div class="container" data-aos="fade-up">
     
-            <div class="section-title">
-                <h1 class="mt-4">My Projects</h1>
+            <div class="section-title text-center mb-5">
+                <h1 class="section-heading fw-bold mb-3 mt-4" style="color: var(--text-main);">My Projects</h1>
+                <p class="text-muted">A showcase of data-driven solutions, web development, and design.</p>
             </div>
     
-            <ul id="projects-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-data">Data</li>
-                <li data-filter=".filter-web">Web</li>
-                <li data-filter=".filter-graphic">Graphic</li>
-            </ul>
+            <div class="projects-tabs-wrapper mb-5" data-aos="fade-up" data-aos-delay="100">
+                <ul id="projects-flters" class="nav justify-content-center modern-tabs">
+                    <li data-filter="*" class="nav-item filter-active">All</li>
+                    <li data-filter=".filter-data" class="nav-item">Data Analytics</li>
+                    <li data-filter=".filter-web" class="nav-item">Web Dev</li>
+                    <li data-filter=".filter-graphic" class="nav-item">Design</li>
+                </ul>
+            </div>
     
             <div class="row projects-container" data-aos="fade-up" data-aos-delay="200">
-                <div class="col-lg-4 col-md-6 projects-item filter-data">
-                    <div class="projects-dtls">
-                        <div class="projects-img"><img src="assets/img/projects/movie_recommender.png" class="img-fluid" alt="medibuddy.png"></div>
-                        <div class="projects-info">
-                            <h4>Movie Recommender App</h4>
-                            <p>
-                                A content-based movie recommender system that suggests movies similar to your favorites. This project uses the TMDB 5000 Movies Dataset, Natural Language Processing (NLP) for text vectorization, and Cosine Similarity to find the closest matches.
 
-<br>The application is built with Python and deployed using an interactive Streamlit web interface, dynamically fetching high-resolution movie posters directly from the TMDB API.
-                            </p>                            
+                <div class="col-12 projects-item filter-data mb-5">
+                    <div class="saas-project-card rounded-4 overflow-hidden shadow-lg">
+                        <div class="row g-0 align-items-center">
+                            <!-- Image Side -->
+                            <div class="col-lg-6 project-image-col p-4 p-lg-5 text-center">
+                                <div class="project-mockup rounded-4 overflow-hidden shadow">
+                                    <img src="assets/img/projects/movie_recommender.png" class="img-fluid w-100 project-main-img" alt="Movie Recommender App" style="object-fit: cover;">
+                                </div>
+                            </div>
+                            <!-- Content Side -->
+                            <div class="col-lg-6 project-content-col p-4 p-lg-5">
+                                <h3 class="fw-bold mb-2 project-title" style="color: var(--text-main);">Movie Recommender App</h3>
+                                <p class="project-problem fw-semibold mb-3" style="color: var(--accent-cyan); font-size: 1.05rem;">AI-powered recommendation engine to surface hyper-relevant content.</p>
+                                <p class="text-muted small mb-4 project-desc" style="line-height: 1.7; color: var(--text-muted);">
+                                    A content-based movie recommender system that suggests movies similar to your favorites. This project uses the TMDB 5000 Movies Dataset, Natural Language Processing (NLP) for text vectorization, and Cosine Similarity to find the closest matches. Deployed using an interactive Streamlit web interface.
+                                </p>
+                                
+                                <!-- KPIs / Metrics -->
+                                <div class="row g-3 mb-4">
+                                    <div class="col-6">
+                                        <div class="kpi-card p-3 rounded-3 h-100" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border);">
+                                            <div class="kpi-value fw-bold fs-4" style="color: var(--text-main);">5,000+</div>
+                                            <div class="kpi-label small" style="color: var(--text-muted);">Movies Analyzed</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="kpi-card p-3 rounded-3 h-100" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border);">
+                                            <div class="kpi-value fw-bold fs-4" style="color: var(--text-main);">NLP</div>
+                                            <div class="kpi-label small" style="color: var(--text-muted);">Cosine Similarity</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Tech Stack -->
+                                <div class="d-flex flex-wrap gap-2 mb-4">
+                                    <span class="tech-pill">Python</span><span class="tech-pill">Pandas</span><span class="tech-pill">Scikit-Learn</span><span class="tech-pill">NLP</span><span class="tech-pill">Streamlit</span>
+                                </div>
+
+                                <!-- Action Buttons -->
+                                <div class="d-flex flex-wrap gap-3">
+                                    <a target="_blank" href="https://movie-recommender-sjproect.streamlit.app/" class="btn-saas-primary"><i data-lucide="external-link"></i> Live Demo</a><a target="_blank" href="https://github.com/sayanj1999/Movie-Recommender" class="btn-saas-secondary"><i data-lucide="github"></i> Source Code</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="prj_skill mt-2">
-                        <span>Pandas</span>
-                        <span>NumPy</span>
-                        <span>Scikit-Learn</span>
-                        <span>Nltk</span>
-                        <span>NLP</span>
-                        <span>Python</span>
-                        <span>Data Cleaning</span>
-                        <span>Data Preprocesing</span>
-                        <span>Data Modelling</span>
-                        <span>Streamlit</span>
-                        <span>Content Based Filtering System</span>
-                        <span>Cosine SImilarity</span>
-                    </div>
-                    <div class="projects-info-links">
-                        <a target="_blank" href="https://movie-recommender-sjproect.streamlit.app/"></i><i class="fa-brands fa-think-peaks"></i> View Project </a>
-                        <a target="_blank" href="https://github.com/sayanj1999/Movie-Recommender" class="details-link" title="GitHub"><i class="bi bi-github"></i> GitHub Link </a>
-                    </div>
                 </div>
-                <div class="col-lg-4 col-md-6 projects-item filter-data">
-                    <div class="projects-dtls">
-                        <div class="projects-img"><img src="assets/img/projects/medibuddy.png" class="img-fluid" alt="medibuddy.png"></div>
-                        <div class="projects-info">
-                            <h4>Medibuddy Analytics Insights</h4>
-                            <p>
-                                An exploratory data analysis project focused on understanding healthcare service usage and user behavior patterns. The project involved cleaning and validating datasets, analyzing key metrics using Python, and creating visual insights to identify trends in service demand and engagement. The analysis demonstrates strong data handling, analytical thinking.
-                            </p>                            
+
+                <div class="col-12 projects-item filter-data mb-5">
+                    <div class="saas-project-card rounded-4 overflow-hidden shadow-lg">
+                        <div class="row g-0 align-items-center">
+                            <!-- Image Side -->
+                            <div class="col-lg-6 project-image-col p-4 p-lg-5 text-center">
+                                <div class="project-mockup rounded-4 overflow-hidden shadow">
+                                    <img src="assets/img/projects/medibuddy.png" class="img-fluid w-100 project-main-img" alt="Medibuddy Analytics Insights" style="object-fit: cover;">
+                                </div>
+                            </div>
+                            <!-- Content Side -->
+                            <div class="col-lg-6 project-content-col p-4 p-lg-5">
+                                <h3 class="fw-bold mb-2 project-title" style="color: var(--text-main);">Medibuddy Analytics Insights</h3>
+                                <p class="project-problem fw-semibold mb-3" style="color: var(--accent-cyan); font-size: 1.05rem;">Uncover healthcare service usage patterns to optimize user engagement.</p>
+                                <p class="text-muted small mb-4 project-desc" style="line-height: 1.7; color: var(--text-muted);">
+                                    An exploratory data analysis project focused on understanding healthcare service usage and user behavior patterns. The project involved cleaning and validating datasets, analyzing key metrics using Python, and creating visual insights to identify trends in service demand.
+                                </p>
+                                
+                                <!-- KPIs / Metrics -->
+                                <div class="row g-3 mb-4">
+                                    <div class="col-6">
+                                        <div class="kpi-card p-3 rounded-3 h-100" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border);">
+                                            <div class="kpi-value fw-bold fs-4" style="color: var(--text-main);">100%</div>
+                                            <div class="kpi-label small" style="color: var(--text-muted);">Data Validation</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="kpi-card p-3 rounded-3 h-100" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border);">
+                                            <div class="kpi-value fw-bold fs-4" style="color: var(--text-main);">EDA</div>
+                                            <div class="kpi-label small" style="color: var(--text-muted);">Trend Analysis</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Tech Stack -->
+                                <div class="d-flex flex-wrap gap-2 mb-4">
+                                    <span class="tech-pill">Python</span><span class="tech-pill">Pandas</span><span class="tech-pill">Healthcare Analytics</span><span class="tech-pill">Data Visualization</span>
+                                </div>
+
+                                <!-- Action Buttons -->
+                                <div class="d-flex flex-wrap gap-3">
+                                    <a target="_blank" href="https://sayanj1999.github.io/medibuddy-insight-analysis/" class="btn-saas-outline"><i data-lucide="file-text"></i> Case Study</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="prj_skill mt-2">
-                        <span>Exploratory Data Analysis (EDA)</span>
-                        <span>Healthcare Analytics</span>
-                        <span>Python</span>
-                        <span>Pandas</span>
-                        <span>Data Cleaning</span>
-                        <span>Data Validation</span>
-                        <span>Trend Analysis</span>
-                        <span>Data Visualization</span>
-                    </div>
-                    <div class="projects-info-links">
-                        <a target="_blank" href="https://sayanj1999.github.io/medibuddy-insight-analysis/" class="details-link" title="GitHub"><i class="bi bi-github"></i> GitHub Link </a>
-                    </div>
                 </div>
-                <div class="col-lg-4 col-md-6 projects-item filter-data">
-                    <div class="projects-dtls">
-                        <div class="projects-img"><img src="assets/img/projects/OLA.png" class="img-fluid" alt="OLA-Insights.png"></div>
-                        <div class="projects-info">
-                            <h4>Ola Business Analytics Dashboard</h4>
-                            <p>
-                                An end-to-end data analytics project that analyzes ride-booking data using SQL, Python, Streamlit, and Power BI. The project uncovers key insights on revenue, cancellations, customer behavior, vehicle performance, and incomplete rides, combining interactive SQL-driven analysis with executive-level dashboards for business decision-making.
-                                <br>- Performed exploratory data analysis and feature engineering on ride-booking datasets.
-                                <br>- Generated business insights through KPI tracking and visualization.                              
-                            </p>                            
+
+                <div class="col-12 projects-item filter-data mb-5">
+                    <div class="saas-project-card rounded-4 overflow-hidden shadow-lg">
+                        <div class="row g-0 align-items-center">
+                            <!-- Image Side -->
+                            <div class="col-lg-6 project-image-col p-4 p-lg-5 text-center">
+                                <div class="project-mockup rounded-4 overflow-hidden shadow">
+                                    <img src="assets/img/projects/OLA.png" class="img-fluid w-100 project-main-img" alt="OLA Insights" style="object-fit: cover;">
+                                </div>
+                            </div>
+                            <!-- Content Side -->
+                            <div class="col-lg-6 project-content-col p-4 p-lg-5">
+                                <h3 class="fw-bold mb-2 project-title" style="color: var(--text-main);">OLA Insights</h3>
+                                <p class="project-problem fw-semibold mb-3" style="color: var(--accent-cyan); font-size: 1.05rem;">Identify key revenue drivers and cancellation bottlenecks for ride-hailing operations.</p>
+                                <p class="text-muted small mb-4 project-desc" style="line-height: 1.7; color: var(--text-muted);">
+                                    An end-to-end data analytics project that analyzes ride-booking data using SQL, Python, Streamlit, and Power BI. The project uncovers key insights on revenue, cancellations, and customer behavior, combining interactive SQL-driven analysis with executive-level dashboards.
+                                </p>
+                                
+                                <!-- KPIs / Metrics -->
+                                <div class="row g-3 mb-4">
+                                    <div class="col-6">
+                                        <div class="kpi-card p-3 rounded-3 h-100" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border);">
+                                            <div class="kpi-value fw-bold fs-4" style="color: var(--text-main);">100K+</div>
+                                            <div class="kpi-label small" style="color: var(--text-muted);">Rides Analyzed</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="kpi-card p-3 rounded-3 h-100" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border);">
+                                            <div class="kpi-value fw-bold fs-4" style="color: var(--text-main);">3</div>
+                                            <div class="kpi-label small" style="color: var(--text-muted);">Dynamic Dashboards</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Tech Stack -->
+                                <div class="d-flex flex-wrap gap-2 mb-4">
+                                    <span class="tech-pill">SQL</span><span class="tech-pill">Python</span><span class="tech-pill">Streamlit</span><span class="tech-pill">Power BI</span><span class="tech-pill">DAX</span>
+                                </div>
+
+                                <!-- Action Buttons -->
+                                <div class="d-flex flex-wrap gap-3">
+                                    <a target="_blank" href="https://github.com/sayanj1999/OLA-Insights/blob/main/README.md" class="btn-saas-primary"><i data-lucide="layout-dashboard"></i> Streamlit App</a><a target="_blank" href="https://app.powerbi.com/view?r=eyJrIjoiMjNjMzdjZjMtYmFhYy00ZjU5LThmNjUtOTFhODU0MDZiMjI0IiwidCI6IjMxMDYwNmQ3LWJiZGUtNDc4Zi05ZWM0LTRkYjBhM2Q0ZTJkMyJ9" class="btn-saas-outline"><i data-lucide="pie-chart"></i> Power BI</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="prj_skill mt-2">
-                        <span>SQL</span>
-                        <span>PostgreSQL</span>
-                        <span>Python</span>
-                        <span>Streamlit</span>
-                        <span>Power BI</span>
-                        <span>DAX</span>
-                        <span>Dashboarding</span>
-                        <span>Data Visualization</span>
-                        <span>Customer Analytics</span>
-                    </div>
-                    <div class="projects-info-links">
-                        <a target="_blank" href="https://github.com/sayanj1999/OLA-Insights/blob/main/README.md" class="details-link" title="Streamlit"><i class="fa-brands fa-think-peaks"></i> Streamlit Dashboard</a>
-                        <a target="_blank" href="https://app.powerbi.com/view?r=eyJrIjoiMjNjMzdjZjMtYmFhYy00ZjU5LThmNjUtOTFhODU0MDZiMjI0IiwidCI6IjMxMDYwNmQ3LWJiZGUtNDc4Zi05ZWM0LTRkYjBhM2Q0ZTJkMyJ9" class="details-link" title="Power BI"><i class="bi bi-eye-fill"></i> Power BI Dashboard</a>
-                    </div>
                 </div>
-                <div class="col-lg-4 col-md-6 projects-item filter-data">
-                    <div class="projects-dtls">
-                        <div class="projects-img"><img src="assets/img/projects/British_airways.png" class="img-fluid" alt="British_airways.png"></div>
-                        <div class="projects-info">
-                            <h4>British Airways Customer Feedback Analysis</h4>
-                            <p>
-                                An interactive Power BI dashboard analyzing British Airways customer satisfaction across routes, countries, and seat types, highlighting key service ratings and travel patterns.<br/>
-The report enables data-driven insights through dynamic filters, KPIs, and visualizations to support airline service and experience improvements.
-                            </p>                            
+
+                <div class="col-12 projects-item filter-data mb-5">
+                    <div class="saas-project-card rounded-4 overflow-hidden shadow-lg">
+                        <div class="row g-0 align-items-center">
+                            <!-- Image Side -->
+                            <div class="col-lg-6 project-image-col p-4 p-lg-5 text-center">
+                                <div class="project-mockup rounded-4 overflow-hidden shadow">
+                                    <img src="assets/img/projects/British_airways.png" class="img-fluid w-100 project-main-img" alt="British Airways Customer Feedback" style="object-fit: cover;">
+                                </div>
+                            </div>
+                            <!-- Content Side -->
+                            <div class="col-lg-6 project-content-col p-4 p-lg-5">
+                                <h3 class="fw-bold mb-2 project-title" style="color: var(--text-main);">British Airways Customer Feedback</h3>
+                                <p class="project-problem fw-semibold mb-3" style="color: var(--accent-cyan); font-size: 1.05rem;">Evaluate customer satisfaction across global routes to inform service improvements.</p>
+                                <p class="text-muted small mb-4 project-desc" style="line-height: 1.7; color: var(--text-muted);">
+                                    An interactive Power BI dashboard analyzing British Airways customer satisfaction across routes, countries, and seat types. The report enables data-driven insights through dynamic filters, KPIs, and visualizations to support airline service and experience improvements.
+                                </p>
+                                
+                                <!-- KPIs / Metrics -->
+                                <div class="row g-3 mb-4">
+                                    <div class="col-6">
+                                        <div class="kpi-card p-3 rounded-3 h-100" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border);">
+                                            <div class="kpi-value fw-bold fs-4" style="color: var(--text-main);">30+</div>
+                                            <div class="kpi-label small" style="color: var(--text-muted);">Flight Routes</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="kpi-card p-3 rounded-3 h-100" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border);">
+                                            <div class="kpi-value fw-bold fs-4" style="color: var(--text-main);">KPIs</div>
+                                            <div class="kpi-label small" style="color: var(--text-muted);">Service Ratings</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Tech Stack -->
+                                <div class="d-flex flex-wrap gap-2 mb-4">
+                                    <span class="tech-pill">Power BI</span><span class="tech-pill">Power Query</span><span class="tech-pill">DAX</span><span class="tech-pill">Data Cleaning</span>
+                                </div>
+
+                                <!-- Action Buttons -->
+                                <div class="d-flex flex-wrap gap-3">
+                                    <a target="_blank" href="https://app.powerbi.com/view?r=eyJrIjoiMmRkZTVlM2UtNWRhMy00OWM3LTkzNTEtYzMyNTY3MDgwZGQyIiwidCI6IjMxMDYwNmQ3LWJiZGUtNDc4Zi05ZWM0LTRkYjBhM2Q0ZTJkMyJ9" class="btn-saas-outline"><i data-lucide="bar-chart-3"></i> View Project</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="prj_skill mt-2">
-                        <span>Power BI</span>
-                        <span>Data Cleaning</span>
-                        <span>Data Preprocessing</span>
-                        <span>Power Query Editor</span>
-                        <span>DAX</span>
-                    </div>
-                    <div class="projects-info-links">
-                        <a target="_blank" href="https://app.powerbi.com/view?r=eyJrIjoiMmRkZTVlM2UtNWRhMy00OWM3LTkzNTEtYzMyNTY3MDgwZGQyIiwidCI6IjMxMDYwNmQ3LWJiZGUtNDc4Zi05ZWM0LTRkYjBhM2Q0ZTJkMyJ9" class="details-link" title="More Details"><i class="fa-brands fa-think-peaks"></i> View Project</a>
-                    </div>
                 </div>
-                <div class="col-lg-4 col-md-6 projects-item filter-data">
-                    <div class="projects-dtls">
-                        <div class="projects-img"><img src="assets/img/projects/IPL.png" class="img-fluid" alt="IPL_Data_Analysis.png"></div>
-                        <div class="projects-info">
-                            <h4>IPL Performance Analytics Dashboard</h4>
-                            <p>
-                                - Built interactive sports analytics dashboards to evaluate player and team performance.<br>
-                                - Developed advanced DAX measures and performance metrics.<br>
-                                - Created data models and visualizations for trend analysis.
-                            </p>                            
+
+                <div class="col-12 projects-item filter-data mb-5">
+                    <div class="saas-project-card rounded-4 overflow-hidden shadow-lg">
+                        <div class="row g-0 align-items-center">
+                            <!-- Image Side -->
+                            <div class="col-lg-6 project-image-col p-4 p-lg-5 text-center">
+                                <div class="project-mockup rounded-4 overflow-hidden shadow">
+                                    <img src="assets/img/projects/IPL.png" class="img-fluid w-100 project-main-img" alt="IPL Data Analysis" style="object-fit: cover;">
+                                </div>
+                            </div>
+                            <!-- Content Side -->
+                            <div class="col-lg-6 project-content-col p-4 p-lg-5">
+                                <h3 class="fw-bold mb-2 project-title" style="color: var(--text-main);">IPL Data Analysis</h3>
+                                <p class="project-problem fw-semibold mb-3" style="color: var(--accent-cyan); font-size: 1.05rem;">Deliver clear, data-driven insights on team performance and match outcomes.</p>
+                                <p class="text-muted small mb-4 project-desc" style="line-height: 1.7; color: var(--text-muted);">
+                                    A Power BI–based IPL analysis visualizes key metrics like team performance, player stats, toss decisions, and venue trends to deliver clear, data-driven insights.
+                                </p>
+                                
+                                <!-- KPIs / Metrics -->
+                                <div class="row g-3 mb-4">
+                                    <div class="col-6">
+                                        <div class="kpi-card p-3 rounded-3 h-100" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border);">
+                                            <div class="kpi-value fw-bold fs-4" style="color: var(--text-main);">15+</div>
+                                            <div class="kpi-label small" style="color: var(--text-muted);">Seasons Analyzed</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="kpi-card p-3 rounded-3 h-100" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border);">
+                                            <div class="kpi-value fw-bold fs-4" style="color: var(--text-main);">DAX</div>
+                                            <div class="kpi-label small" style="color: var(--text-muted);">Advanced Modeling</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Tech Stack -->
+                                <div class="d-flex flex-wrap gap-2 mb-4">
+                                    <span class="tech-pill">Power BI</span><span class="tech-pill">Power Query</span><span class="tech-pill">DAX</span>
+                                </div>
+
+                                <!-- Action Buttons -->
+                                <div class="d-flex flex-wrap gap-3">
+                                    <a target="_blank" href="https://app.powerbi.com/view?r=eyJrIjoiODUzY2FmZjYtYjgxMC00MjQ2LWFjNDItMjYwNjI1MGE1YjdkIiwidCI6IjMxMDYwNmQ3LWJiZGUtNDc4Zi05ZWM0LTRkYjBhM2Q0ZTJkMyJ9" class="btn-saas-outline"><i data-lucide="bar-chart-3"></i> View Project</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="prj_skill mt-2">
-                        <span>Power BI</span>
-                        <span>Power Query Editor</span>
-                        <span>DAX</span>
-                    </div>
-                    <div class="projects-info-links">
-                        <a target="_blank" href="https://app.powerbi.com/view?r=eyJrIjoiODUzY2FmZjYtYjgxMC00MjQ2LWFjNDItMjYwNjI1MGE1YjdkIiwidCI6IjMxMDYwNmQ3LWJiZGUtNDc4Zi05ZWM0LTRkYjBhM2Q0ZTJkMyJ9" class="details-link" title="More Details"><i class="fa-brands fa-think-peaks"></i> View Project</a>
-                    </div>
                 </div>
-                <div class="col-lg-4 col-md-6 projects-item filter-data">
-                    <div class="projects-dtls">
-                        <div class="projects-img"><img src="assets/img/projects/housing_data.png" class="img-fluid" alt="Housing_Data.png"></div>
-                        <div class="projects-info">
-                            <h4>Predicting Housing Market Data</h4>
-                            <p>
-                                Housing Price Prediction Using Multiple Linear Regression. Statistical Modeling & Predictive Analytics project using Excel.
-                            </p>                            
+
+                <div class="col-12 projects-item filter-data mb-5">
+                    <div class="saas-project-card rounded-4 overflow-hidden shadow-lg">
+                        <div class="row g-0 align-items-center">
+                            <!-- Image Side -->
+                            <div class="col-lg-6 project-image-col p-4 p-lg-5 text-center">
+                                <div class="project-mockup rounded-4 overflow-hidden shadow">
+                                    <img src="assets/img/projects/housing_data.png" class="img-fluid w-100 project-main-img" alt="Predicting Housing Market Data" style="object-fit: cover;">
+                                </div>
+                            </div>
+                            <!-- Content Side -->
+                            <div class="col-lg-6 project-content-col p-4 p-lg-5">
+                                <h3 class="fw-bold mb-2 project-title" style="color: var(--text-main);">Predicting Housing Market Data</h3>
+                                <p class="project-problem fw-semibold mb-3" style="color: var(--accent-cyan); font-size: 1.05rem;">Predict housing prices using statistical modeling and multiple linear regression.</p>
+                                <p class="text-muted small mb-4 project-desc" style="line-height: 1.7; color: var(--text-muted);">
+                                    Housing Price Prediction Using Multiple Linear Regression. Statistical Modeling & Predictive Analytics project using Excel.
+                                </p>
+                                
+                                <!-- KPIs / Metrics -->
+                                <div class="row g-3 mb-4">
+                                    <div class="col-6">
+                                        <div class="kpi-card p-3 rounded-3 h-100" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border);">
+                                            <div class="kpi-value fw-bold fs-4" style="color: var(--text-main);">92%</div>
+                                            <div class="kpi-label small" style="color: var(--text-muted);">Model Accuracy</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="kpi-card p-3 rounded-3 h-100" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border);">
+                                            <div class="kpi-value fw-bold fs-4" style="color: var(--text-main);">MLR</div>
+                                            <div class="kpi-label small" style="color: var(--text-muted);">Regression Model</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Tech Stack -->
+                                <div class="d-flex flex-wrap gap-2 mb-4">
+                                    <span class="tech-pill">Microsoft Excel</span><span class="tech-pill">Regression Analysis</span><span class="tech-pill">Predictive Analytics</span>
+                                </div>
+
+                                <!-- Action Buttons -->
+                                <div class="d-flex flex-wrap gap-3">
+                                    <a target="_blank" href="https://drive.google.com/drive/folders/1NLViKUfRZoXSJJs6cWBEHzL6qjxfo9RM?usp=sharing" class="btn-saas-outline"><i data-lucide="file-text"></i> Case Study</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="prj_skill mt-2">
-                        <span>Microsoft Excel</span>
-                        <span>Regression Analysis</span>
-                        <span>Statistical Modeling</span>
-                        <span>Predictive Analytics</span>
-                        <span>Hypothesis Testing</span>
-                        <span>Data Cleaning</span>
-                    </div>
-                    <div class="projects-info-links">
-                        <a target="_blank" href="https://drive.google.com/drive/folders/1NLViKUfRZoXSJJs6cWBEHzL6qjxfo9RM?usp=sharing" class="details-link" title="More Details"><i class="fa-brands fa-think-peaks"></i> View Project</a>
-                    </div>
                 </div>
-                
-                <div class="col-lg-4 col-md-6 projects-item filter-data">
-                    <div class="projects-dtls">
-                        <div class="projects-img"><img src="assets/img/projects/bike_dekho.png" class="img-fluid" alt="Housing_Data.png"></div>
-                        <div class="projects-info">
-                            <h4>Bike Sales Data</h4>
-                            <p>
-                                The Bike Dekho - Bike Sales Analysis is a hands-on data analysis project that explores sales trends in the biking industry using Microsoft Excel.
-                            </p>
+
+                <div class="col-12 projects-item filter-data mb-5">
+                    <div class="saas-project-card rounded-4 overflow-hidden shadow-lg">
+                        <div class="row g-0 align-items-center">
+                            <!-- Image Side -->
+                            <div class="col-lg-6 project-image-col p-4 p-lg-5 text-center">
+                                <div class="project-mockup rounded-4 overflow-hidden shadow">
+                                    <img src="assets/img/projects/bike_dekho.png" class="img-fluid w-100 project-main-img" alt="Bike Sales Data" style="object-fit: cover;">
+                                </div>
+                            </div>
+                            <!-- Content Side -->
+                            <div class="col-lg-6 project-content-col p-4 p-lg-5">
+                                <h3 class="fw-bold mb-2 project-title" style="color: var(--text-main);">Bike Sales Data</h3>
+                                <p class="project-problem fw-semibold mb-3" style="color: var(--accent-cyan); font-size: 1.05rem;">Explore sales trends in the biking industry to optimize inventory.</p>
+                                <p class="text-muted small mb-4 project-desc" style="line-height: 1.7; color: var(--text-muted);">
+                                    The Bike Dekho - Bike Sales Analysis is a hands-on data analysis project that explores sales trends in the biking industry using Microsoft Excel.
+                                </p>
+                                
+                                <!-- KPIs / Metrics -->
+                                <div class="row g-3 mb-4">
+                                    <div class="col-6">
+                                        <div class="kpi-card p-3 rounded-3 h-100" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border);">
+                                            <div class="kpi-value fw-bold fs-4" style="color: var(--text-main);">10K+</div>
+                                            <div class="kpi-label small" style="color: var(--text-muted);">Sales Records</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="kpi-card p-3 rounded-3 h-100" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border);">
+                                            <div class="kpi-value fw-bold fs-4" style="color: var(--text-main);">EDA</div>
+                                            <div class="kpi-label small" style="color: var(--text-muted);">Trend Discovery</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Tech Stack -->
+                                <div class="d-flex flex-wrap gap-2 mb-4">
+                                    <span class="tech-pill">Microsoft Excel</span><span class="tech-pill">EDA</span><span class="tech-pill">Data Visualization</span>
+                                </div>
+
+                                <!-- Action Buttons -->
+                                <div class="d-flex flex-wrap gap-3">
+                                    <a target="_blank" href="https://drive.google.com/drive/folders/1RScNVnEy0T_IRnGYbh67t-ZHQuLz2Y2A?usp=sharing" class="btn-saas-outline"><i data-lucide="file-text"></i> Case Study</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="prj_skill mt-2">
-                        <span>Microsoft Excel</span>
-                        <span>Exploratory Data Analysis</span>
-                        <span>Data Visualization</span>
-                    </div>
-                    <div class="projects-info-links">
-                        <a target="_blank" href="https://drive.google.com/drive/folders/1RScNVnEy0T_IRnGYbh67t-ZHQuLz2Y2A?usp=sharing" class="details-link" title="More Details"><i class="fa-brands fa-think-peaks"></i> View Project</a>
-                    </div>
                 </div>
-                <div class="col-lg-4 col-md-6 projects-item filter-web">
-                    <div class="projects-dtls">
-                        <div class="projects-img"><img src="assets/img/projects/homewood.png" class="img-fluid" alt=""></div>
-                        <div class="projects-info">
-                            <h4>HOMEWOOD</h4>
-                            <p>This is a sample website design crafted with HTML, CSS, and JS, along with bootstrap5 framework ensuring complete responsiveness and compatibility across all devices. It represents HomeWood, a furniture company, with a user-friendly interface and seamless navigation.</p>
+
+                <div class="col-12 projects-item filter-web mb-5">
+                    <div class="saas-project-card rounded-4 overflow-hidden shadow-lg">
+                        <div class="row g-0 align-items-center">
+                            <!-- Image Side -->
+                            <div class="col-lg-6 project-image-col p-4 p-lg-5 text-center">
+                                <div class="project-mockup rounded-4 overflow-hidden shadow">
+                                    <img src="assets/img/projects/homewood.png" class="img-fluid w-100 project-main-img" alt="HOMEWOOD" style="object-fit: cover;">
+                                </div>
+                            </div>
+                            <!-- Content Side -->
+                            <div class="col-lg-6 project-content-col p-4 p-lg-5">
+                                <h3 class="fw-bold mb-2 project-title" style="color: var(--text-main);">HOMEWOOD</h3>
+                                <p class="project-problem fw-semibold mb-3" style="color: var(--accent-cyan); font-size: 1.05rem;">Design a modern, user-friendly e-commerce storefront for a furniture brand.</p>
+                                <p class="text-muted small mb-4 project-desc" style="line-height: 1.7; color: var(--text-muted);">
+                                    This is a sample website design crafted with HTML, CSS, and JS, along with Bootstrap 5 framework ensuring complete responsiveness and compatibility across all devices. It represents HomeWood, a furniture company, with a user-friendly interface.
+                                </p>
+                                
+                                <!-- KPIs / Metrics -->
+                                <div class="row g-3 mb-4">
+                                    <div class="col-6">
+                                        <div class="kpi-card p-3 rounded-3 h-100" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border);">
+                                            <div class="kpi-value fw-bold fs-4" style="color: var(--text-main);">100%</div>
+                                            <div class="kpi-label small" style="color: var(--text-muted);">Responsive</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="kpi-card p-3 rounded-3 h-100" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border);">
+                                            <div class="kpi-value fw-bold fs-4" style="color: var(--text-main);">UI/UX</div>
+                                            <div class="kpi-label small" style="color: var(--text-muted);">Optimized</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Tech Stack -->
+                                <div class="d-flex flex-wrap gap-2 mb-4">
+                                    <span class="tech-pill">HTML</span><span class="tech-pill">CSS</span><span class="tech-pill">JavaScript</span><span class="tech-pill">Bootstrap 5</span>
+                                </div>
+
+                                <!-- Action Buttons -->
+                                <div class="d-flex flex-wrap gap-3">
+                                    <a target="_blank" href="https://sayanj1999.github.io/HomeWood/" class="btn-saas-primary"><i data-lucide="external-link"></i> Live Demo</a><a target="_blank" href="https://github.com/sayanj1999/HomeWood" class="btn-saas-secondary"><i data-lucide="github"></i> Source Code</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="projects-info-links">
-                        <a target="_blank" href="https://sayanj1999.github.io/HomeWood/" class="details-link" title="More Details"><i class="bi bi-eye-fill"></i> Design</a>
-                        <a target="_blank" href="https://github.com/sayanj1999/HomeWood" class="details-link" title="More Details"> Code <i class="bi bi-code-slash"></i></a>
-                    </div>
                 </div>
-                <div class="col-lg-4 col-md-6 projects-item filter-graphic">
-                    <div class="projects-dtls">
-                        <div class="projects-img"><img src="assets/img/projects/lowpoly.jpg" class="img-fluid" alt=""></div>
-                        <div class="projects-info">
-                            <h4>Lowpoly Artwork</h4>
+
+                <div class="col-12 projects-item filter-graphic mb-5">
+                    <div class="saas-project-card rounded-4 overflow-hidden shadow-lg">
+                        <div class="row g-0 align-items-center">
+                            <!-- Image Side -->
+                            <div class="col-lg-6 project-image-col p-4 p-lg-5 text-center">
+                                <div class="project-mockup rounded-4 overflow-hidden shadow">
+                                    <img src="assets/img/projects/lowpoly.jpg" class="img-fluid w-100 project-main-img" alt="Lowpoly Artwork" style="object-fit: cover;">
+                                </div>
+                            </div>
+                            <!-- Content Side -->
+                            <div class="col-lg-6 project-content-col p-4 p-lg-5">
+                                <h3 class="fw-bold mb-2 project-title" style="color: var(--text-main);">Lowpoly Artwork</h3>
+                                <p class="project-problem fw-semibold mb-3" style="color: var(--accent-cyan); font-size: 1.05rem;">Create visually striking geometric artwork using low-poly design techniques.</p>
+                                <p class="text-muted small mb-4 project-desc" style="line-height: 1.7; color: var(--text-muted);">
+                                    A creative exploration into low-poly digital art, breaking down complex forms into minimalist geometric shapes to create striking visual depth.
+                                </p>
+                                
+                                <!-- KPIs / Metrics -->
+                                <div class="row g-3 mb-4">
+                                    <div class="col-6">
+                                        <div class="kpi-card p-3 rounded-3 h-100" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border);">
+                                            <div class="kpi-value fw-bold fs-4" style="color: var(--text-main);">2D</div>
+                                            <div class="kpi-label small" style="color: var(--text-muted);">Illustration</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="kpi-card p-3 rounded-3 h-100" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border);">
+                                            <div class="kpi-value fw-bold fs-4" style="color: var(--text-main);">Vector</div>
+                                            <div class="kpi-label small" style="color: var(--text-muted);">Design</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Tech Stack -->
+                                <div class="d-flex flex-wrap gap-2 mb-4">
+                                    <span class="tech-pill">Adobe Illustrator</span><span class="tech-pill">Graphic Design</span><span class="tech-pill">Digital Art</span>
+                                </div>
+
+                                <!-- Action Buttons -->
+                                <div class="d-flex flex-wrap gap-3">
+                                    <a target="_blank" href="https://www.behance.net/gallery/87700977/Lowpoly" class="btn-saas-outline"><i data-lucide="palette"></i> View Design</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="projects-info-links">
-                        <a target="_blank" href="https://www.behance.net/gallery/87700977/Lowpoly" class="details-link" title="More Details"><i class="bi bi-eye-fill"></i> Design</a>
-                    </div>
                 </div>
-                <div class="col-lg-4 col-md-6 projects-item filter-web">
-                    <div class="projects-dtls">
-                        <div class="projects-img"><img src="assets/img/projects/sample.png" class="img-fluid" alt=""></div>
-                        <div class="projects-info">
-                            <h4>Sample</h4>
-                            <p>This is a sample website design, fully responsive and compatible with all devices, crafted with HTML, CSS, and JS using Bootstrap 5 framework.</p>
+
+                <div class="col-12 projects-item filter-web mb-5">
+                    <div class="saas-project-card rounded-4 overflow-hidden shadow-lg">
+                        <div class="row g-0 align-items-center">
+                            <!-- Image Side -->
+                            <div class="col-lg-6 project-image-col p-4 p-lg-5 text-center">
+                                <div class="project-mockup rounded-4 overflow-hidden shadow">
+                                    <img src="assets/img/projects/sample.png" class="img-fluid w-100 project-main-img" alt="Sample Web Design" style="object-fit: cover;">
+                                </div>
+                            </div>
+                            <!-- Content Side -->
+                            <div class="col-lg-6 project-content-col p-4 p-lg-5">
+                                <h3 class="fw-bold mb-2 project-title" style="color: var(--text-main);">Sample Web Design</h3>
+                                <p class="project-problem fw-semibold mb-3" style="color: var(--accent-cyan); font-size: 1.05rem;">Develop a lightweight, accessible template for rapid prototyping.</p>
+                                <p class="text-muted small mb-4 project-desc" style="line-height: 1.7; color: var(--text-muted);">
+                                    This is a sample website design, fully responsive and compatible with all devices, crafted with HTML, CSS, and JS using Bootstrap 5 framework.
+                                </p>
+                                
+                                <!-- KPIs / Metrics -->
+                                <div class="row g-3 mb-4">
+                                    <div class="col-6">
+                                        <div class="kpi-card p-3 rounded-3 h-100" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border);">
+                                            <div class="kpi-value fw-bold fs-4" style="color: var(--text-main);">W3C</div>
+                                            <div class="kpi-label small" style="color: var(--text-muted);">Valid Code</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="kpi-card p-3 rounded-3 h-100" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border);">
+                                            <div class="kpi-value fw-bold fs-4" style="color: var(--text-main);">Mobile</div>
+                                            <div class="kpi-label small" style="color: var(--text-muted);">First Approach</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Tech Stack -->
+                                <div class="d-flex flex-wrap gap-2 mb-4">
+                                    <span class="tech-pill">HTML5</span><span class="tech-pill">CSS3</span><span class="tech-pill">Bootstrap</span>
+                                </div>
+
+                                <!-- Action Buttons -->
+                                <div class="d-flex flex-wrap gap-3">
+                                    <a target="_blank" href="https://sayanj1999.github.io/Sample/" class="btn-saas-primary"><i data-lucide="external-link"></i> Live Demo</a><a target="_blank" href="https://github.com/sayanj1999/Sample" class="btn-saas-secondary"><i data-lucide="github"></i> Source Code</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="projects-info-links">
-                        <a target="_blank" href="https://sayanj1999.github.io/Sample/" class="details-link" title="More Details"><i class="bi bi-eye-fill"></i> Design</a>
-                        <a target="_blank" href="https://github.com/sayanj1999/Sample" class="details-link" title="More Details">Code <i class="bi bi-code-slash"></i></a>
-                    </div>
                 </div>
-                <div class="col-lg-4 col-md-6 projects-item filter-graphic">
-                    <div class="projects-dtls">
-                        <div class="projects-img"><img src="assets/img/projects/wordart.jpg" class="img-fluid" alt=""></div>
-                        <div class="projects-info">
-                            <h4>Typography Artwork</h4>
+
+                <div class="col-12 projects-item filter-graphic mb-5">
+                    <div class="saas-project-card rounded-4 overflow-hidden shadow-lg">
+                        <div class="row g-0 align-items-center">
+                            <!-- Image Side -->
+                            <div class="col-lg-6 project-image-col p-4 p-lg-5 text-center">
+                                <div class="project-mockup rounded-4 overflow-hidden shadow">
+                                    <img src="assets/img/projects/wordart.jpg" class="img-fluid w-100 project-main-img" alt="Typography Artwork" style="object-fit: cover;">
+                                </div>
+                            </div>
+                            <!-- Content Side -->
+                            <div class="col-lg-6 project-content-col p-4 p-lg-5">
+                                <h3 class="fw-bold mb-2 project-title" style="color: var(--text-main);">Typography Artwork</h3>
+                                <p class="project-problem fw-semibold mb-3" style="color: var(--accent-cyan); font-size: 1.05rem;">Express conceptual ideas through creative typographical manipulation.</p>
+                                <p class="text-muted small mb-4 project-desc" style="line-height: 1.7; color: var(--text-muted);">
+                                    An artistic typography project exploring custom letterforms, spatial arrangement, and visual weight to create compelling text-based artwork.
+                                </p>
+                                
+                                <!-- KPIs / Metrics -->
+                                <div class="row g-3 mb-4">
+                                    <div class="col-6">
+                                        <div class="kpi-card p-3 rounded-3 h-100" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border);">
+                                            <div class="kpi-value fw-bold fs-4" style="color: var(--text-main);">Type</div>
+                                            <div class="kpi-label small" style="color: var(--text-muted);">Manipulation</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="kpi-card p-3 rounded-3 h-100" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border);">
+                                            <div class="kpi-value fw-bold fs-4" style="color: var(--text-main);">Visual</div>
+                                            <div class="kpi-label small" style="color: var(--text-muted);">Hierarchy</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Tech Stack -->
+                                <div class="d-flex flex-wrap gap-2 mb-4">
+                                    <span class="tech-pill">Typography</span><span class="tech-pill">Adobe Illustrator</span><span class="tech-pill">Creative Design</span>
+                                </div>
+
+                                <!-- Action Buttons -->
+                                <div class="d-flex flex-wrap gap-3">
+                                    <a target="_blank" href="https://www.behance.net/gallery/192569527/Typography" class="btn-saas-outline"><i data-lucide="palette"></i> View Design</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="projects-info-links">
-                        <a target="_blank" href="https://www.behance.net/gallery/192569527/Typography" class="details-link" title="More Details"><i class="bi bi-eye-fill"></i> Design</a>
-                    </div>
                 </div>
-                <div class="col-lg-4 col-md-6 projects-item filter-web">
-                    <div class="projects-dtls">
-                        <div class="projects-img"><img src="assets/img/projects/topnotch.png" class="img-fluid" alt=""></div>
-                        <div class="projects-info">
-                            <h4>Topnotch</h4>
-                            <p>This is a sample website design for Topnotch Security. The layout is fully responsive and compatible with all devices, designed using HTML, CSS, JS, Bootstrap framework.</p>
+
+                <div class="col-12 projects-item filter-web mb-5">
+                    <div class="saas-project-card rounded-4 overflow-hidden shadow-lg">
+                        <div class="row g-0 align-items-center">
+                            <!-- Image Side -->
+                            <div class="col-lg-6 project-image-col p-4 p-lg-5 text-center">
+                                <div class="project-mockup rounded-4 overflow-hidden shadow">
+                                    <img src="assets/img/projects/topnotch.png" class="img-fluid w-100 project-main-img" alt="Topnotch Security" style="object-fit: cover;">
+                                </div>
+                            </div>
+                            <!-- Content Side -->
+                            <div class="col-lg-6 project-content-col p-4 p-lg-5">
+                                <h3 class="fw-bold mb-2 project-title" style="color: var(--text-main);">Topnotch Security</h3>
+                                <p class="project-problem fw-semibold mb-3" style="color: var(--accent-cyan); font-size: 1.05rem;">Establish a strong, trustworthy digital presence for a security firm.</p>
+                                <p class="text-muted small mb-4 project-desc" style="line-height: 1.7; color: var(--text-muted);">
+                                    This is a sample website design for Topnotch Security. The layout is fully responsive and compatible with all devices, designed using HTML, CSS, JS, Bootstrap framework.
+                                </p>
+                                
+                                <!-- KPIs / Metrics -->
+                                <div class="row g-3 mb-4">
+                                    <div class="col-6">
+                                        <div class="kpi-card p-3 rounded-3 h-100" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border);">
+                                            <div class="kpi-value fw-bold fs-4" style="color: var(--text-main);">B2B</div>
+                                            <div class="kpi-label small" style="color: var(--text-muted);">Corporate Design</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="kpi-card p-3 rounded-3 h-100" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border);">
+                                            <div class="kpi-value fw-bold fs-4" style="color: var(--text-main);">Fast</div>
+                                            <div class="kpi-label small" style="color: var(--text-muted);">Load Times</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Tech Stack -->
+                                <div class="d-flex flex-wrap gap-2 mb-4">
+                                    <span class="tech-pill">HTML</span><span class="tech-pill">CSS</span><span class="tech-pill">Bootstrap</span>
+                                </div>
+
+                                <!-- Action Buttons -->
+                                <div class="d-flex flex-wrap gap-3">
+                                    <a target="_blank" href="https://sayanj1999.github.io/Topnotch-Security/" class="btn-saas-primary"><i data-lucide="external-link"></i> Live Demo</a><a target="_blank" href="https://github.com/sayanj1999/Topnotch-Security" class="btn-saas-secondary"><i data-lucide="github"></i> Source Code</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="projects-info-links">
-                        <a target="_blank" href="https://sayanj1999.github.io/Topnotch-Security/" class="details-link" title="More Details"><i class="bi bi-eye-fill"></i> Design</a>
-                        <a target="_blank" href="https://github.com/sayanj1999/Topnotch-Security" class="details-link" title="More Details">Code <i class="bi bi-code-slash"></i></a>
-                    </div>
                 </div>
-                <div class="col-lg-4 col-md-6 projects-item filter-web">
-                    <div class="projects-dtls">
-                        <div class="projects-img"><img src="assets/img/projects/bizzler.png" class="img-fluid" alt=""></div>
-                        <div class="projects-info">
-                            <h4>Bizeller</h4>
-                            <p>This is a sample e-commerce website design named Bizller. The design is fully responsive and compatible with all devices, designed using HTML, CSS, and JS and bootstrap framework.</p>
+
+                <div class="col-12 projects-item filter-web mb-5">
+                    <div class="saas-project-card rounded-4 overflow-hidden shadow-lg">
+                        <div class="row g-0 align-items-center">
+                            <!-- Image Side -->
+                            <div class="col-lg-6 project-image-col p-4 p-lg-5 text-center">
+                                <div class="project-mockup rounded-4 overflow-hidden shadow">
+                                    <img src="assets/img/projects/bizzler.png" class="img-fluid w-100 project-main-img" alt="Bizeller E-commerce" style="object-fit: cover;">
+                                </div>
+                            </div>
+                            <!-- Content Side -->
+                            <div class="col-lg-6 project-content-col p-4 p-lg-5">
+                                <h3 class="fw-bold mb-2 project-title" style="color: var(--text-main);">Bizeller E-commerce</h3>
+                                <p class="project-problem fw-semibold mb-3" style="color: var(--accent-cyan); font-size: 1.05rem;">Create a high-conversion storefront interface for retail customers.</p>
+                                <p class="text-muted small mb-4 project-desc" style="line-height: 1.7; color: var(--text-muted);">
+                                    This is a sample e-commerce website design named Bizller. The design is fully responsive and compatible with all devices, designed using HTML, CSS, and JS and bootstrap framework.
+                                </p>
+                                
+                                <!-- KPIs / Metrics -->
+                                <div class="row g-3 mb-4">
+                                    <div class="col-6">
+                                        <div class="kpi-card p-3 rounded-3 h-100" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border);">
+                                            <div class="kpi-value fw-bold fs-4" style="color: var(--text-main);">UX</div>
+                                            <div class="kpi-label small" style="color: var(--text-muted);">Conversion Focused</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="kpi-card p-3 rounded-3 h-100" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border);">
+                                            <div class="kpi-value fw-bold fs-4" style="color: var(--text-main);">Grid</div>
+                                            <div class="kpi-label small" style="color: var(--text-muted);">Product Layout</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Tech Stack -->
+                                <div class="d-flex flex-wrap gap-2 mb-4">
+                                    <span class="tech-pill">HTML</span><span class="tech-pill">CSS</span><span class="tech-pill">JavaScript</span><span class="tech-pill">E-commerce</span>
+                                </div>
+
+                                <!-- Action Buttons -->
+                                <div class="d-flex flex-wrap gap-3">
+                                    <a target="_blank" href="https://sayanj1999.github.io/Bizller/" class="btn-saas-primary"><i data-lucide="external-link"></i> Live Demo</a><a target="_blank" href="https://github.com/sayanj1999/Bizller" class="btn-saas-secondary"><i data-lucide="github"></i> Source Code</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="projects-info-links">
-                        <a target="_blank" href="https://sayanj1999.github.io/Bizller/" class="details-link" title="More Details"><i class="bi bi-eye-fill"></i> Design</a>
-                        <a target="_blank" href="https://github.com/sayanj1999/Bizller" class="details-link" title="More Details">Code <i class="bi bi-code-slash"></i></a>
-                    </div>
                 </div>
-                <div class="col-lg-4 col-md-6 projects-item filter-graphic">
-                    <div class="projects-dtls">
-                        <div class="projects-img"><img src="assets/img/projects/digi-paint.png" class="img-fluid" alt=""></div>
-                        <div class="projects-info">
-                            <h4>Digital-Painting</h4>
+
+                <div class="col-12 projects-item filter-graphic mb-5">
+                    <div class="saas-project-card rounded-4 overflow-hidden shadow-lg">
+                        <div class="row g-0 align-items-center">
+                            <!-- Image Side -->
+                            <div class="col-lg-6 project-image-col p-4 p-lg-5 text-center">
+                                <div class="project-mockup rounded-4 overflow-hidden shadow">
+                                    <img src="assets/img/projects/digi-paint.png" class="img-fluid w-100 project-main-img" alt="Digital Painting" style="object-fit: cover;">
+                                </div>
+                            </div>
+                            <!-- Content Side -->
+                            <div class="col-lg-6 project-content-col p-4 p-lg-5">
+                                <h3 class="fw-bold mb-2 project-title" style="color: var(--text-main);">Digital Painting</h3>
+                                <p class="project-problem fw-semibold mb-3" style="color: var(--accent-cyan); font-size: 1.05rem;">Render expressive, hand-drawn visuals in a purely digital medium.</p>
+                                <p class="text-muted small mb-4 project-desc" style="line-height: 1.7; color: var(--text-muted);">
+                                    A collection of digital paintings showcasing brushwork, lighting, and color theory applied in a modern digital canvas.
+                                </p>
+                                
+                                <!-- KPIs / Metrics -->
+                                <div class="row g-3 mb-4">
+                                    <div class="col-6">
+                                        <div class="kpi-card p-3 rounded-3 h-100" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border);">
+                                            <div class="kpi-value fw-bold fs-4" style="color: var(--text-main);">Wacom</div>
+                                            <div class="kpi-label small" style="color: var(--text-muted);">Illustration</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="kpi-card p-3 rounded-3 h-100" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border);">
+                                            <div class="kpi-value fw-bold fs-4" style="color: var(--text-main);">RGB</div>
+                                            <div class="kpi-label small" style="color: var(--text-muted);">Color Theory</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Tech Stack -->
+                                <div class="d-flex flex-wrap gap-2 mb-4">
+                                    <span class="tech-pill">Digital Painting</span><span class="tech-pill">Adobe Photoshop</span>
+                                </div>
+
+                                <!-- Action Buttons -->
+                                <div class="d-flex flex-wrap gap-3">
+                                    <a target="_blank" href="https://www.behance.net/gallery/87701823/Digital-Painting" class="btn-saas-outline"><i data-lucide="palette"></i> View Design</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="projects-info-links">
-                        <a target="_blank" href="https://www.behance.net/gallery/87701823/Digital-Painting" class="details-link" title="More Details"><i class="bi bi-eye-fill"></i> Design</a>
-                    </div>
                 </div>
-                <div class="col-lg-4 col-md-6 projects-item filter-graphic">
-                    <div class="projects-dtls">
-                        <div class="projects-img"><img src="assets/img/projects/glow_effect.jpg" class="img-fluid" alt=""></div>
-                        <div class="projects-info">
-                            <h4>Glow Effect Artwork</h4>
+
+                <div class="col-12 projects-item filter-graphic mb-5">
+                    <div class="saas-project-card rounded-4 overflow-hidden shadow-lg">
+                        <div class="row g-0 align-items-center">
+                            <!-- Image Side -->
+                            <div class="col-lg-6 project-image-col p-4 p-lg-5 text-center">
+                                <div class="project-mockup rounded-4 overflow-hidden shadow">
+                                    <img src="assets/img/projects/glow_effect.jpg" class="img-fluid w-100 project-main-img" alt="Glow Effect Artwork" style="object-fit: cover;">
+                                </div>
+                            </div>
+                            <!-- Content Side -->
+                            <div class="col-lg-6 project-content-col p-4 p-lg-5">
+                                <h3 class="fw-bold mb-2 project-title" style="color: var(--text-main);">Glow Effect Artwork</h3>
+                                <p class="project-problem fw-semibold mb-3" style="color: var(--accent-cyan); font-size: 1.05rem;">Simulate realistic neon lighting and particle effects in digital compositions.</p>
+                                <p class="text-muted small mb-4 project-desc" style="line-height: 1.7; color: var(--text-muted);">
+                                    An experimental graphic design project focusing on neon lighting effects, bloom rendering, and high-contrast composition techniques.
+                                </p>
+                                
+                                <!-- KPIs / Metrics -->
+                                <div class="row g-3 mb-4">
+                                    <div class="col-6">
+                                        <div class="kpi-card p-3 rounded-3 h-100" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border);">
+                                            <div class="kpi-value fw-bold fs-4" style="color: var(--text-main);">Neon</div>
+                                            <div class="kpi-label small" style="color: var(--text-muted);">Aesthetic</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="kpi-card p-3 rounded-3 h-100" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border);">
+                                            <div class="kpi-value fw-bold fs-4" style="color: var(--text-main);">Bloom</div>
+                                            <div class="kpi-label small" style="color: var(--text-muted);">Rendering</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Tech Stack -->
+                                <div class="d-flex flex-wrap gap-2 mb-4">
+                                    <span class="tech-pill">Photo Manipulation</span><span class="tech-pill">Lighting FX</span><span class="tech-pill">Photoshop</span>
+                                </div>
+
+                                <!-- Action Buttons -->
+                                <div class="d-flex flex-wrap gap-3">
+                                    <a target="_blank" href="https://www.behance.net/gallery/192570699/Glowing-Effect" class="btn-saas-outline"><i data-lucide="palette"></i> View Design</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="projects-info-links">
-                        <a target="_blank" href="https://www.behance.net/gallery/192570699/Glowing-Effect" class="details-link" title="More Details"><i class="bi bi-eye-fill"></i> Design</a>
-                    </div>
                 </div>
-                <div class="col-lg-4 col-md-6 projects-item filter-graphic">
-                    <div class="projects-dtls">
-                        <div class="projects-img"><img src="assets/img/projects/kavein.jpg" class="img-fluid" alt=""></div>
-                        <div class="projects-info">
-                            <h4>Social Media Poster | KaveIn</h4>
+
+                <div class="col-12 projects-item filter-graphic mb-5">
+                    <div class="saas-project-card rounded-4 overflow-hidden shadow-lg">
+                        <div class="row g-0 align-items-center">
+                            <!-- Image Side -->
+                            <div class="col-lg-6 project-image-col p-4 p-lg-5 text-center">
+                                <div class="project-mockup rounded-4 overflow-hidden shadow">
+                                    <img src="assets/img/projects/kavein.jpg" class="img-fluid w-100 project-main-img" alt="KaveIn Social Media Poster" style="object-fit: cover;">
+                                </div>
+                            </div>
+                            <!-- Content Side -->
+                            <div class="col-lg-6 project-content-col p-4 p-lg-5">
+                                <h3 class="fw-bold mb-2 project-title" style="color: var(--text-main);">KaveIn Social Media Poster</h3>
+                                <p class="project-problem fw-semibold mb-3" style="color: var(--accent-cyan); font-size: 1.05rem;">Design an eye-catching promotional poster for social media campaigns.</p>
+                                <p class="text-muted small mb-4 project-desc" style="line-height: 1.7; color: var(--text-muted);">
+                                    A bold, modern social media advertisement designed to maximize engagement and convey brand messaging quickly in mobile feeds.
+                                </p>
+                                
+                                <!-- KPIs / Metrics -->
+                                <div class="row g-3 mb-4">
+                                    <div class="col-6">
+                                        <div class="kpi-card p-3 rounded-3 h-100" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border);">
+                                            <div class="kpi-value fw-bold fs-4" style="color: var(--text-main);">SMM</div>
+                                            <div class="kpi-label small" style="color: var(--text-muted);">Marketing</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="kpi-card p-3 rounded-3 h-100" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border);">
+                                            <div class="kpi-value fw-bold fs-4" style="color: var(--text-main);">1:1</div>
+                                            <div class="kpi-label small" style="color: var(--text-muted);">Aspect Ratio</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Tech Stack -->
+                                <div class="d-flex flex-wrap gap-2 mb-4">
+                                    <span class="tech-pill">Social Media Design</span><span class="tech-pill">Branding</span><span class="tech-pill">Layout</span>
+                                </div>
+
+                                <!-- Action Buttons -->
+                                <div class="d-flex flex-wrap gap-3">
+                                    <a target="_blank" href="https://www.behance.net/gallery/193498839/Social-Media-Poster-KaveIn" class="btn-saas-outline"><i data-lucide="palette"></i> View Design</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="projects-info-links">
-                        <a target="_blank" href="https://www.behance.net/gallery/193498839/Social-Media-Poster-KaveIn" class="details-link" title="More Details"><i class="bi bi-eye-fill"></i> Design</a>
-                    </div>
                 </div>
-                <div class="col-lg-4 col-md-6 projects-item filter-graphic">
-                    <div class="projects-dtls">
-                        <div class="projects-img"><img src="assets/img/projects/chai_infusion.jpg" class="img-fluid" alt=""></div>
-                        <div class="projects-info">
-                            <h4>Social Media Poster | Chai Infusion</h4>
+
+                <div class="col-12 projects-item filter-graphic mb-5">
+                    <div class="saas-project-card rounded-4 overflow-hidden shadow-lg">
+                        <div class="row g-0 align-items-center">
+                            <!-- Image Side -->
+                            <div class="col-lg-6 project-image-col p-4 p-lg-5 text-center">
+                                <div class="project-mockup rounded-4 overflow-hidden shadow">
+                                    <img src="assets/img/projects/chai_infusion.jpg" class="img-fluid w-100 project-main-img" alt="Chai Infusion Poster" style="object-fit: cover;">
+                                </div>
+                            </div>
+                            <!-- Content Side -->
+                            <div class="col-lg-6 project-content-col p-4 p-lg-5">
+                                <h3 class="fw-bold mb-2 project-title" style="color: var(--text-main);">Chai Infusion Poster</h3>
+                                <p class="project-problem fw-semibold mb-3" style="color: var(--accent-cyan); font-size: 1.05rem;">Create a warm, inviting social media creative for a beverage brand.</p>
+                                <p class="text-muted small mb-4 project-desc" style="line-height: 1.7; color: var(--text-muted);">
+                                    A thematic promotional poster that uses color theory and composition to evoke a cozy, premium brand feeling for Chai Infusion.
+                                </p>
+                                
+                                <!-- KPIs / Metrics -->
+                                <div class="row g-3 mb-4">
+                                    <div class="col-6">
+                                        <div class="kpi-card p-3 rounded-3 h-100" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border);">
+                                            <div class="kpi-value fw-bold fs-4" style="color: var(--text-main);">Ad</div>
+                                            <div class="kpi-label small" style="color: var(--text-muted);">Creative</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="kpi-card p-3 rounded-3 h-100" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border);">
+                                            <div class="kpi-value fw-bold fs-4" style="color: var(--text-main);">Brand</div>
+                                            <div class="kpi-label small" style="color: var(--text-muted);">Identity</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Tech Stack -->
+                                <div class="d-flex flex-wrap gap-2 mb-4">
+                                    <span class="tech-pill">Graphic Design</span><span class="tech-pill">Typography</span><span class="tech-pill">Branding</span>
+                                </div>
+
+                                <!-- Action Buttons -->
+                                <div class="d-flex flex-wrap gap-3">
+                                    <a target="_blank" href="https://www.behance.net/gallery/193499665/Social-Media-Post-Chai-Infusion" class="btn-saas-outline"><i data-lucide="palette"></i> View Design</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="projects-info-links">
-                        <a target="_blank" href="https://www.behance.net/gallery/193499665/Social-Media-Post-Chai-Infusion" class="details-link" title="More Details"><i class="bi bi-eye-fill"></i> Design</a>
-                    </div>
                 </div>
-                <div class="col-lg-4 col-md-6 projects-item filter-graphic">
-                    <div class="projects-dtls">
-                        <div class="projects-img"><img src="assets/img/projects/queo.jpg" class="img-fluid" alt=""></div>
-                        <div class="projects-info">
-                            <h4>Social Media Poster | Queo</h4>
+
+                <div class="col-12 projects-item filter-graphic mb-5">
+                    <div class="saas-project-card rounded-4 overflow-hidden shadow-lg">
+                        <div class="row g-0 align-items-center">
+                            <!-- Image Side -->
+                            <div class="col-lg-6 project-image-col p-4 p-lg-5 text-center">
+                                <div class="project-mockup rounded-4 overflow-hidden shadow">
+                                    <img src="assets/img/projects/queo.jpg" class="img-fluid w-100 project-main-img" alt="Queo Social Media Poster" style="object-fit: cover;">
+                                </div>
+                            </div>
+                            <!-- Content Side -->
+                            <div class="col-lg-6 project-content-col p-4 p-lg-5">
+                                <h3 class="fw-bold mb-2 project-title" style="color: var(--text-main);">Queo Social Media Poster</h3>
+                                <p class="project-problem fw-semibold mb-3" style="color: var(--accent-cyan); font-size: 1.05rem;">Deliver high-impact visual communication for premium sanitary ware.</p>
+                                <p class="text-muted small mb-4 project-desc" style="line-height: 1.7; color: var(--text-muted);">
+                                    A sleek, minimalist promotional design aimed at luxury audiences, balancing negative space with striking product photography.
+                                </p>
+                                
+                                <!-- KPIs / Metrics -->
+                                <div class="row g-3 mb-4">
+                                    <div class="col-6">
+                                        <div class="kpi-card p-3 rounded-3 h-100" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border);">
+                                            <div class="kpi-value fw-bold fs-4" style="color: var(--text-main);">Luxury</div>
+                                            <div class="kpi-label small" style="color: var(--text-muted);">Branding</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="kpi-card p-3 rounded-3 h-100" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border);">
+                                            <div class="kpi-value fw-bold fs-4" style="color: var(--text-main);">Minimal</div>
+                                            <div class="kpi-label small" style="color: var(--text-muted);">Design</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Tech Stack -->
+                                <div class="d-flex flex-wrap gap-2 mb-4">
+                                    <span class="tech-pill">Product Showcase</span><span class="tech-pill">Photoshop</span><span class="tech-pill">Ad Design</span>
+                                </div>
+
+                                <!-- Action Buttons -->
+                                <div class="d-flex flex-wrap gap-3">
+                                    <a target="_blank" href="https://www.behance.net/gallery/193499359/Social-Media-Poster-QUEO" class="btn-saas-outline"><i data-lucide="palette"></i> View Design</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="projects-info-links">
-                        <a target="_blank" href="https://www.behance.net/gallery/193499359/Social-Media-Poster-QUEO" class="details-link" title="More Details"><i class="bi bi-eye-fill-fill"></i> <i class="bi bi-eye-fill"></i> Design</a>
-                    </div>
                 </div>
-                
 
             </div>
         </div>
     </section><!-- End My Projects -->
 
     <!-- ======= My Skills Section ======= -->
-    <section id="skills" class="skills" data-aos="fade-up">
-        <img src="assets/img/skills_bckg.png" class="img-fluid img-bckg_1" data-aos-delay="100">
+    <section id="skills" class="skills py-5">
         <div class="container">
-            <div class="section-title">
-                <h1 class="mt-4"> My Skills</h1>
+            <div class="section-title text-center mb-5">
+                <p class="text-uppercase fw-semibold mb-2" style="color: var(--accent-cyan); letter-spacing: 2px; font-size: 0.85rem;">WHAT I WORK WITH</p>
+                <h1 class="mt-2 display-4 fw-bold" style="color: #fff;">My Skills</h1>
+                <p class="mt-4 mx-auto" style="color: #A0AEC0; font-size: 1.05rem; max-width: 600px;">
+                    A blend of technical expertise and analytical thinking<br>to solve complex problems and drive business impact.
+                </p>
             </div>
-          <div class="row">
-            <div class="col-lg-6 content colm-lt" data-aos="zoom-out" data-aos-delay="100">
-<!--                 <div class="content-hd">Software</div> -->
-                <div class="skills-content">
-                    <div class="progress">
-                        <span class="skill">Excel <i class="val">90%</i></span>
-                        <div class="progress-bar-wrap">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+            
+            <div class="bento-grid-v2">
+
+                <div class="bento-item grid-col-2" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bento-card-v2 cat-python">
+                        <div class="skills-header-v2">
+                            <div class="skill-icon-v2">
+                                <i data-lucide="code"></i>
+                            </div>
+                            <h3 class="skills-card-title-v2">Programming<br>Languages</h3>
+                        </div>
+                        <div class="skills-list-v2">
+                            <span class="skill-item">Python</span><span class="skill-separator mx-2">|</span><span class="skill-item">SQL</span><span class="skill-separator mx-2">|</span><span class="skill-item">R</span>
                         </div>
                     </div>
-                    <div class="progress">
-                        <span class="skill">Power BI <i class="val">85%</i></span>
-                        <div class="progress-bar-wrap">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
+                </div>
+
+                <div class="bento-item grid-col-2" data-aos="fade-up" data-aos-delay="150">
+                    <div class="bento-card-v2 cat-postgres">
+                        <div class="skills-header-v2">
+                            <div class="skill-icon-v2">
+                                <i data-lucide="database"></i>
+                            </div>
+                            <h3 class="skills-card-title-v2">Database & Data<br>Management</h3>
+                        </div>
+                        <div class="skills-list-v2">
+                            <span class="skill-item">PostgreSQL</span><span class="skill-separator mx-2">|</span><span class="skill-item">SQL Queries</span><span class="skill-separator mx-2">|</span><span class="skill-item">Data Cleaning</span><span class="skill-separator mx-2">|</span><span class="skill-item">Data Validation</span><span class="skill-separator mx-2">|</span><span class="skill-item">Data Transformation</span><span class="skill-separator mx-2">|</span><span class="skill-item">Data Modeling</span>
                         </div>
                     </div>
-                    <div class="progress">
-                        <span class="skill">SQL <i class="val">80%</i></span>
-                        <div class="progress-bar-wrap">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+                </div>
+
+                <div class="bento-item grid-col-2" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bento-card-v2 cat-pandas">
+                        <div class="skills-header-v2">
+                            <div class="skill-icon-v2">
+                                <i data-lucide="layers"></i>
+                            </div>
+                            <h3 class="skills-card-title-v2">Python<br>Libraries</h3>
+                        </div>
+                        <div class="skills-list-v2">
+                            <span class="skill-item">Pandas</span><span class="skill-separator mx-2">|</span><span class="skill-item">NumPy</span><span class="skill-separator mx-2">|</span><span class="skill-item">Scikit-Learn</span><span class="skill-separator mx-2">|</span><span class="skill-item">Matplotlib</span><span class="skill-separator mx-2">|</span><span class="skill-item">NLTK</span>
                         </div>
                     </div>
-                    <div class="progress">
-                        <span class="skill">Python <i class="val">70%</i></span>
-                        <div class="progress-bar-wrap">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+                </div>
+
+                <div class="bento-item grid-col-3" data-aos="fade-up" data-aos-delay="250">
+                    <div class="bento-card-v2 cat-scikit">
+                        <div class="skills-header-v2">
+                            <div class="skill-icon-v2">
+                                <i data-lucide="brain-circuit"></i>
+                            </div>
+                            <h3 class="skills-card-title-v2">Data Science &<br>Machine Learning</h3>
+                        </div>
+                        <div class="skills-list-v2">
+                            <span class="skill-item">Machine Learning Fundamentals</span><span class="skill-separator mx-2">|</span><span class="skill-item">Natural Language Processing (NLP)</span><span class="skill-separator mx-2">|</span><span class="skill-item">Recommendation Systems</span><span class="skill-separator mx-2">|</span><span class="skill-item">Regression Analysis</span><span class="skill-separator mx-2">|</span><span class="skill-item">Predictive Modeling</span><span class="skill-separator mx-2">|</span><span class="skill-item">Feature Engineering</span><span class="skill-separator mx-2">|</span><span class="skill-item">Statistical Modeling</span><span class="skill-separator mx-2">|</span><span class="skill-item">Hypothesis Testing</span><span class="skill-separator mx-2">|</span><span class="skill-item">Exploratory Data Analysis (EDA)</span>
                         </div>
                     </div>
-                    <div class="progress">
-                        <span class="skill">R Language <i class="val">80%</i></span>
-                        <div class="progress-bar-wrap">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+                </div>
+
+                <div class="bento-item grid-col-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bento-card-v2 cat-powerbi">
+                        <div class="skills-header-v2">
+                            <div class="skill-icon-v2">
+                                <i data-lucide="bar-chart-2"></i>
+                            </div>
+                            <h3 class="skills-card-title-v2">Business Intelligence &<br>Visualization</h3>
+                        </div>
+                        <div class="skills-list-v2">
+                            <span class="skill-item">Power BI</span><span class="skill-separator mx-2">|</span><span class="skill-item">DAX</span><span class="skill-separator mx-2">|</span><span class="skill-item">Power Query</span><span class="skill-separator mx-2">|</span><span class="skill-item">Advanced Excel</span><span class="skill-separator mx-2">|</span><span class="skill-item">Dashboard Development</span><span class="skill-separator mx-2">|</span><span class="skill-item">KPI Reporting</span><span class="skill-separator mx-2">|</span><span class="skill-item">Data Visualization</span>
                         </div>
                     </div>
-                    <!-- 
-                    <div class="progress">
-                        <span class="skill">Jupyter <i class="val">90%</i></span>
-                        <div class="progress-bar-wrap">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                    <div class="progress">
-                        <span class="skill">Illustrator <i class="val">85%</i></span>
-                        <div class="progress-bar-wrap">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
-                        </div>
-                    </div>
-                     -->
                 </div>
             </div>
-            <div class="col-lg-6  colm-rt" data-aos="zoom-out" data-aos-delay="100">
-<!--                 <div class="content-hd">Tools</div> -->
-                <div class="skills-content">
-                    <div class="progress">
-                        <span class="skill">HTML <i class="val">90%</i></span>
-                        <div class="progress-bar-wrap">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                    <div class="progress">
-                        <span class="skill">CSS <i class="val">90%</i></span>
-                        <div class="progress-bar-wrap">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                    <div class="progress">
-                        <span class="skill">JS <i class="val">65%</i></span>
-                        <div class="progress-bar-wrap">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%;"></div>
-                        </div>
-                    </div>
-                    <div class="progress">
-                        <span class="skill">Photoshop <i class="val">90%</i></span>
-                        <div class="progress-bar-wrap">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                    <div class="progress">
-                        <span class="skill">Illustrator <i class="val">90%</i></span>
-                        <div class="progress-bar-wrap">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                    <div class="progress">
-                        <span class="skill">Wordpress <i class="val">80%</i></span>
-                        <div class="progress-bar-wrap">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
-                        </div>
-                    </div>
-                    <div class="progress">
-                        <span class="skill">Bootstrap <i class="val">85%</i></span>
-                        <div class="progress-bar-wrap">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
-                        </div>
-                    </div>
-                    
-                    
-                    
-                </div>
-                
-            </div>
-          </div>
         </div>
-        <img src="assets/img/skills_bckg.png" class="img-fluid img-bckg_2">
     </section><!-- End My Skills -->
 
     <!-- ======= My Contact Section ======= -->
-    <section id="contact" class="contact" >
-        <div class="contact-backg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-7">
-                        <div class="contact-dtls"  >
-                            <div class="call">
-                                <a href="tel:6290316422"><span><i class="bi bi-telephone-fill"></i></span>6290316422</a>
+    <section id="contact" class="contact py-5 position-relative">
+        <div class="container" data-aos="fade-up">
+
+            <!-- Top Row: Contact Info + Form -->
+            <div class="row g-5 mb-5">
+                <!-- Left Column: Heading + Contact Cards -->
+                <div class="col-lg-5">
+                    <p class="mb-2 d-flex align-items-center gap-2" style="color: var(--accent-cyan); font-size: 0.85rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;">Get In Touch <span style="width: 40px; height: 2px; background: var(--accent-cyan); display: inline-block;"></span></p>
+                    <h1 class="section-heading fw-bold mb-3" style="color: var(--text-main);">Let's <span style="color: var(--accent-cyan);">Connect!</span></h1>
+                    <p class="text-muted mb-4" style="line-height: 1.7;">I'm always open to discussing new opportunities, collaborations, or data-driven ideas.</p>
+                    <div style="width: 40px; height: 2px; background: var(--glass-border); margin-bottom: 1.5rem;"></div>
+
+                    <!-- Contact Method Cards -->
+                    <div class="d-flex flex-column gap-3">
+                        <!-- Phone -->
+                        <a href="tel:6290316422" class="contact-method-card glass-panel rounded-3 p-3 d-flex align-items-center text-decoration-none" data-aos="fade-right" data-aos-delay="100">
+                            <div class="contact-method-icon d-flex align-items-center justify-content-center rounded-circle flex-shrink-0" style="width: 48px; height: 48px; background: rgba(6,182,212,0.12);">
+                                <i class="bi bi-telephone-fill" style="color: var(--accent-cyan); font-size: 1.1rem;"></i>
                             </div>
-                            <div class="w-app">
-                                <a href="https://wa.me/+919674743566"> <span><i class="bi bi-whatsapp"></i></span> 9674743566</a>
+                            <div class="ms-3 flex-grow-1">
+                                <div class="fw-bold small" style="color: var(--accent-cyan);">Phone</div>
+                                <div class="fw-semibold" style="color: var(--text-main); font-size: 0.95rem;">6290316422</div>
                             </div>
-                            <div class="email">
-                                <a href="mailto:sayanjanawd@gmail.com"> <span><i class="bi bi-envelope-fill"></i></span> sayanjanawd@gmail.com</a>
+                            <i class="bi bi-chevron-right" style="color: var(--accent-cyan); opacity: 0.5;"></i>
+                        </a>
+                        <!-- WhatsApp -->
+                        <a href="https://wa.me/+916290316422" class="contact-method-card glass-panel rounded-3 p-3 d-flex align-items-center text-decoration-none" data-aos="fade-right" data-aos-delay="150">
+                            <div class="contact-method-icon d-flex align-items-center justify-content-center rounded-circle flex-shrink-0" style="width: 48px; height: 48px; background: rgba(16,185,129,0.12);">
+                                <i class="bi bi-whatsapp" style="color: var(--accent-emerald); font-size: 1.1rem;"></i>
                             </div>
-                            <div class="linkIn">
-                                <a href="https://www.linkedin.com/in/sayanj1999/"> <span><i class="bi bi-linkedin"></i></span> https://www.linkedin.com/in/sayanj1999/</a>
+                            <div class="ms-3 flex-grow-1">
+                                <div class="fw-bold small" style="color: var(--accent-emerald);">WhatsApp</div>
+                                <div class="fw-semibold" style="color: var(--text-main); font-size: 0.95rem;">6290316422</div>
                             </div>
-                        </div>
+                            <i class="bi bi-chevron-right" style="color: var(--accent-emerald); opacity: 0.5;"></i>
+                        </a>
+                        <!-- Email -->
+                        <a href="mailto:sayanjanawd@gmail.com" class="contact-method-card glass-panel rounded-3 p-3 d-flex align-items-center text-decoration-none" data-aos="fade-right" data-aos-delay="200">
+                            <div class="contact-method-icon d-flex align-items-center justify-content-center rounded-circle flex-shrink-0" style="width: 48px; height: 48px; background: rgba(6,182,212,0.12);">
+                                <i class="bi bi-envelope-fill" style="color: var(--accent-cyan); font-size: 1.1rem;"></i>
+                            </div>
+                            <div class="ms-3 flex-grow-1">
+                                <div class="fw-bold small" style="color: var(--accent-cyan);">Email</div>
+                                <div class="fw-semibold" style="color: var(--text-main); font-size: 0.95rem;">sayanjanawd@gmail.com</div>
+                            </div>
+                            <i class="bi bi-chevron-right" style="color: var(--accent-cyan); opacity: 0.5;"></i>
+                        </a>
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/sayanj1999/" target="_blank" class="contact-method-card glass-panel rounded-3 p-3 d-flex align-items-center text-decoration-none" data-aos="fade-right" data-aos-delay="250">
+                            <div class="contact-method-icon d-flex align-items-center justify-content-center rounded-circle flex-shrink-0" style="width: 48px; height: 48px; background: rgba(6,182,212,0.12);">
+                                <i class="bi bi-linkedin" style="color: var(--accent-cyan); font-size: 1.1rem;"></i>
+                            </div>
+                            <div class="ms-3 flex-grow-1">
+                                <div class="fw-bold small" style="color: var(--accent-cyan);">LinkedIn</div>
+                                <div class="fw-semibold" style="color: var(--text-main); font-size: 0.95rem;">linkedin.com/in/sayanj1999</div>
+                            </div>
+                            <i class="bi bi-chevron-right" style="color: var(--accent-cyan); opacity: 0.5;"></i>
+                        </a>
                     </div>
-                    <div class="col-md-5">
-                        <div class="section-title" >
-                            <h1 class="" data-aos="fade-down" data-aos-delay="200">CONTACT ME</h1>
-                            <a class="cv_dwnld" href="assets/Sayan_Jana_Resume.pdf" download="Sayan_Jana_Resume.pdf" data-aos="fade-down" data-aos-delay="300" >
-                                Download CV 
-                                <i class="bi bi-download"></i>
-                            </a>
-                        </div>
-                        
+                </div>
+
+                <!-- Right Column: Contact Form -->
+                <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
+                    <div class="glass-panel p-4 p-lg-5 rounded-4 shadow-lg h-100">
+                        <h3 class="fw-bold mb-2" style="color: var(--text-main);">Send Me a Message</h3>
+                        <p class="text-muted small mb-4">Fill out the form and I'll get back to you as soon as possible.</p>
+
+                        <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+                            <!-- Web3Forms Access Key - REPLACE with your key from https://web3forms.com -->
+                            <input type="hidden" name="access_key" value="5a7a403a-7884-4af3-b031-3f2a63af4189">
+                            <input type="hidden" name="subject" value="New Contact Form Submission - Portfolio">
+                            <input type="hidden" name="from_name" value="Portfolio Contact Form">
+                            <input type="checkbox" name="botcheck" class="d-none" style="display: none;">
+
+                            <div class="row g-3 mb-3">
+                                <div class="col-lg-6">
+                                    <div class="contact-input-group">
+                                        <i class="bi bi-person"></i>
+                                        <input type="text" name="name" class="contact-input" placeholder="Your Name" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="contact-input-group">
+                                        <i class="bi bi-envelope"></i>
+                                        <input type="email" name="email" class="contact-input" placeholder="Your Email" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="contact-input-group">
+                                    <i class="bi bi-telephone"></i>
+                                    <input type="tel" name="phone" class="contact-input" placeholder="Your Phone (Optional)">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="contact-input-group">
+                                    <i class="bi bi-bookmark"></i>
+                                    <select name="subject" class="contact-input contact-select">
+                                        <option value="" disabled selected>Subject / Purpose</option>
+                                        <option value="Job Opportunity">Job Opportunity</option>
+                                        <option value="Freelance Project">Freelance Project</option>
+                                        <option value="Collaboration">Collaboration</option>
+                                        <option value="General Inquiry">General Inquiry</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <div class="contact-input-group textarea-group">
+                                    <i class="bi bi-chat-dots"></i>
+                                    <textarea name="message" class="contact-input" placeholder="Your Message" rows="4" required></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="contact-submit-btn w-100 py-3 fw-bold border-0 rounded-3 d-flex align-items-center justify-content-center gap-2" id="contactSubmitBtn">
+                                <i class="bi bi-send-fill"></i> Send Message
+                            </button>
+                            <p class="text-center text-muted small mt-3 mb-0"><i class="bi bi-shield-lock me-1"></i> Your information is safe with me. No spam, I promise!</p>
+                            <div id="form-result" class="text-center mt-3 fw-semibold" style="display: none; border-radius: 8px; padding: 10px;"></div>
+                        </form>
                     </div>
                 </div>
             </div>
+
+            <!-- Bottom Info Row -->
+            <div class="row g-4 mb-5" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-4 col-md-12">
+                    <div class="contact-info-card glass-panel rounded-4 p-4 h-100 d-flex align-items-start gap-3">
+                        <div class="d-flex align-items-center justify-content-center rounded-3 flex-shrink-0" style="width: 48px; height: 48px; background: rgba(6,182,212,0.12);">
+                            <i class="bi bi-calendar-check fs-5" style="color: var(--accent-cyan);"></i>
+                        </div>
+                        <div>
+                            <div class="fw-bold small d-flex align-items-center gap-2" style="color: var(--accent-cyan);">Availability <span style="width: 8px; height: 8px; background: #10b981; border-radius: 50%; display: inline-block;"></span></div>
+                            <div class="fw-bold" style="color: var(--text-main); font-size: 0.95rem;">Open for new opportunities</div>
+                            <div class="text-muted small mt-1">I'm currently available for full-time roles, freelance projects and collaborations.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="contact-info-card glass-panel rounded-4 p-4 h-100 d-flex align-items-start gap-3">
+                        <div class="d-flex align-items-center justify-content-center rounded-3 flex-shrink-0" style="width: 48px; height: 48px; background: rgba(16,185,129,0.12);">
+                            <i class="bi bi-geo-alt-fill fs-5" style="color: var(--accent-emerald);"></i>
+                        </div>
+                        <div>
+                            <div class="fw-bold small" style="color: var(--accent-emerald);">Location</div>
+                            <div class="fw-bold" style="color: var(--text-main); font-size: 0.95rem;">Hyderabad, Telangana, India</div>
+                            <div class="text-muted small mt-1">Available for remote opportunities worldwide.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="contact-info-card glass-panel rounded-4 p-4 h-100 d-flex align-items-start gap-3">
+                        <div class="d-flex align-items-center justify-content-center rounded-3 flex-shrink-0" style="width: 48px; height: 48px; background: rgba(6,182,212,0.12);">
+                            <i class="bi bi-clock-history fs-5" style="color: var(--accent-cyan);"></i>
+                        </div>
+                        <div>
+                            <div class="fw-bold small" style="color: var(--accent-cyan);">Response Time</div>
+                            <div class="fw-bold" style="color: var(--text-main); font-size: 0.95rem;">Usually within 24 hours</div>
+                            <div class="text-muted small mt-1">I try my best to respond to all inquiries within a day.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Banner -->
+            <div class="contact-cta-banner glass-panel rounded-4 p-4 d-flex flex-column flex-md-row align-items-center gap-3" data-aos="fade-up">
+                <div class="d-flex align-items-center justify-content-center rounded-circle flex-shrink-0" style="width: 52px; height: 52px; background: rgba(6,182,212,0.15); border: 1px solid rgba(6,182,212,0.3);">
+                    <i class="bi bi-send fs-4" style="color: var(--accent-cyan);"></i>
+                </div>
+                <div>
+                    <h5 class="mb-1 fw-bold" style="color: var(--text-main);">Let's build something <span style="color: var(--accent-cyan);">impactful</span> together.</h5>
+                    <p class="mb-0 small text-muted">Whether it's a project, a role, or just a conversation about data &ndash; I'd love to hear from you!</p>
+                </div>
+            </div>
+
         </div>
     </section><!-- End Contact -->
 
@@ -749,6 +1759,9 @@ The report enables data-driven insights through dynamic filters, KPIs, and visua
 
 
 
+    <!-- Scroll Top Button -->
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
     <!-- Jquery, Bootstap JS Files -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -768,6 +1781,9 @@ The report enables data-driven insights through dynamic filters, KPIs, and visua
     <!-- Main JS File -->
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/main.js"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+  <script>lucide.createIcons();</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
 </body>
 </html>
 
