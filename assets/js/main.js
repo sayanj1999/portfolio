@@ -90,6 +90,7 @@
    */
   on('click', '.mobile-nav-toggle', function(e) {
     select('#navbar').classList.toggle('navbar-mobile')
+    select('#header').classList.toggle('mobile-nav-active')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
   })
@@ -114,6 +115,7 @@
       let navbar = select('#navbar')
       if (navbar.classList.contains('navbar-mobile')) {
         navbar.classList.remove('navbar-mobile')
+        select('#header').classList.remove('mobile-nav-active')
         let navbarToggle = select('.mobile-nav-toggle')
         navbarToggle.classList.toggle('bi-list')
         navbarToggle.classList.toggle('bi-x')
@@ -218,6 +220,30 @@
     });
   });
 
+  /**
+   * Back to top button
+   */
+  let backtotop = select('.back-to-top')
+  if (backtotop) {
+    const toggleBacktotop = () => {
+      if (window.scrollY > 100) {
+        backtotop.classList.add('active')
+      } else {
+        backtotop.classList.remove('active')
+      }
+    }
+    window.addEventListener('load', toggleBacktotop)
+    onscroll(document, toggleBacktotop)
+    
+    on('click', '.back-to-top', function(e) {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  }
+
 })()
 
 // Owlcarousel
@@ -272,4 +298,57 @@ $('.owl-carousel').owlCarousel({
           items:3
         }
     }
-})
+});
+
+// Web3Forms AJAX Submission
+const contactForm = document.getElementById('contactForm');
+const formResult = document.getElementById('form-result');
+
+if(contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const formData = new FormData(contactForm);
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+        
+        formResult.innerHTML = "Sending...";
+        formResult.style.display = "block";
+        formResult.style.color = "var(--text-main)";
+        formResult.style.backgroundColor = "rgba(255, 255, 255, 0.05)";
+
+        fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            })
+            .then(async (response) => {
+                let json = await response.json();
+                if (response.status == 200) {
+                    formResult.innerHTML = "Thanks for reaching out! I'll get back to you shortly.";
+                    formResult.style.color = "#10b981"; // Emerald color for success
+                    formResult.style.backgroundColor = "rgba(16, 185, 129, 0.1)";
+                } else {
+                    console.log(response);
+                    formResult.innerHTML = json.message || "Something went wrong. Please try again.";
+                    formResult.style.color = "#ef4444"; // Red for error
+                    formResult.style.backgroundColor = "rgba(239, 68, 68, 0.1)";
+                }
+            })
+            .catch(error => {
+                console.log(error);
+                formResult.innerHTML = "Something went wrong. Please check your connection.";
+                formResult.style.color = "#ef4444";
+                formResult.style.backgroundColor = "rgba(239, 68, 68, 0.1)";
+            })
+            .then(function() {
+                contactForm.reset();
+                setTimeout(() => {
+                    formResult.style.display = "none";
+                }, 5000);
+            });
+    });
+}
