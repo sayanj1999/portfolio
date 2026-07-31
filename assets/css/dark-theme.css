@@ -131,8 +131,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Banner */
 #banner {
-  background-color: transparent !important;
-  background-image: none !important; 
+  overflow-x: clip;
   position: relative;
 }
 #banner .container { position: relative; z-index: 1; }

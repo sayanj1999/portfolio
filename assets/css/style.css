@@ -4,13 +4,7 @@
 html {
     scroll-behavior: smooth;
   }
-body {
-    font-family: 'poppins', sans-serif;
-    color: #4d3800;
-    font-weight: 300;
-    
-  }
-  
+
   a {
     text-decoration: none;
   }
@@ -240,7 +234,6 @@ body {
 --------------------------------------------------------------*/
 
 #banner {
-  background-color: #fcf6e6;
   margin-top: 6rem;
 }
 #banner h1 {
@@ -345,18 +338,10 @@ body {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
-  #banner {
-    background-image: url(../img/banner_bckg.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-x: right;
-  }
+
 }
 @media (max-width: 767.99px) {
-  #banner {
-    background-image: none;
-  }
-  #banner .cover {
+    #banner .cover {
     text-align: center;
   }
   #banner .cover .sm_screen_img {
